@@ -1,0 +1,111 @@
+.search-bar-container{
+    /*Position*/
+    position: relative;
+    
+    /*size*/
+    width: 500px;
+    height: 80px;
+
+    /*shape*/
+    border-radius: 15px;
+
+    /*Colors*/
+    background-color: var(--color-white-secondary);
+
+    /*Effects*/
+    box-shadow: var(--shadow-inset);
+
+    /*Layout*/
+    display: flex;
+    align-items: center;
+    padding-left: var(--spacing-lg);
+
+    /*behavior*/
+    flex-shrink: 0;
+
+    /*Typography*/
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-xl);    /* 32px */
+    font-weight: var(--font-weight-regular);                   /* Regular weight - ADD THIS! */
+    color: var(--color-text-secondary);
+}
+
+.search-bar-container input{
+    /*Layout*/
+    width: 100%;
+    height: 100%;
+
+    /*shape*/
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    
+    /*Colors*/
+    background-color: transparent;
+
+    /*Typography*/
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-xl);    /* 32px */
+    font-weight: var(--font-weight-regular);                   /* Regular weight - ADD THIS! */
+    color: var(--color-text-secondary);
+}
+
+.search-bar-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 8px;
+    background: var(--color-white-primary);
+    border: 2px solid var(--color-white-tertiary);
+    border-radius: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+    box-shadow: var(--shadow-standard);
+    z-index: 1000;
+}
+
+.search-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border-bottom: 1px solid var(--color-white-tertiary);
+}
+
+.search-item:last-child {
+    border-bottom: none;
+}
+
+.search-item:hover {
+    background-color: var(--color-white-secondary);
+}
+
+.search-item-id {
+    font-weight: bold;
+    color: var(--color-text-secondary);
+    min-width: 60px;
+    font-size: var(--font-size-sm);
+}
+
+.search-item-name {
+    font-weight: 600;
+    color: var(--color-text-primary);
+    text-transform: capitalize;
+    flex: 1;
+    font-size: var(--font-size-sm);
+}
+
+.search-item-types {
+    display: flex;
+    gap: 6px;
+}
+
+.search-item-empty {
+    padding: 20px;
+    text-align: center;
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-sm);
+}

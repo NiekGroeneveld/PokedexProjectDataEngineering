@@ -1,0 +1,15 @@
+.pokemon-page{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.content-grid{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    gap: 36px;
+}
+

@@ -1,0 +1,11 @@
+.pokemon-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+    /* Add these back! */
+    background-color:var(--color-white-primary);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: var(--shadow-standard);
+}

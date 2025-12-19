@@ -1,0 +1,32 @@
+.evolution-chain-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white-primary);
+    padding: var(--spacing-lg);
+    gap: 24px;
+    border-radius: 15px;
+    box-shadow: var(--shadow-standard);
+}
+
+.evolution-arrow {
+    font-size: 116px;
+    font-weight: 400;
+    color: black;
+    line-height: 1;
+    user-select: none;
+}
+
+/* Mobile: Stack with arrows */
+@media (max-width: 768px) {
+    .evolution-chain-container {
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .evolution-arrow {
+        transform: rotate(90deg);
+        font-size: 80px;
+    }
+}

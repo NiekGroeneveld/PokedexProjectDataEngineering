@@ -1,0 +1,33 @@
+.type-card {
+  /* Size */
+  padding: 12px 24px;
+  min-width: 100px;
+  
+  /* Shape */
+  border-radius: 10px;
+  
+  /* Layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Effects */
+  box-shadow: var(--shadow-standard);
+  
+  /* Typography */
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  color: black;
+  text-transform: capitalize;  /* Makes "electric" → "Electric" */
+}
+
+.type-card p {
+    margin: 0;
+}
+
+.type-card-small {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+}
