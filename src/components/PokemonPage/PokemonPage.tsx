@@ -3,6 +3,7 @@ import PokemonImage from './ContentSection/PokemonImage/PokemonImage';
 import PokemonInfo from './ContentSection/PokemonInfo/PokemonInfo';
 import EvolutionChain from './EvolutionChain/EvolutionChain';
 import './PokemonPage.css';
+import RecommenderBox from './RecommenderBox/RecommenderBox';
 
 export default function PokemonPage() {
   return (
@@ -15,6 +16,7 @@ export default function PokemonPage() {
       </div>
       
       <EvolutionChain />
+      <RecommenderBox />
     </main>
   );
 }

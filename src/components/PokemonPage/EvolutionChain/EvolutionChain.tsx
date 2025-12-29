@@ -1,11 +1,12 @@
 import "./EvolutionChain.css";
-import EvolutionCard from "./EvolutionCard/Evolutioncard";
+import EvolutionCard from "../../Shared/PokemonCard/Pokemoncard";
 import { usePokemon } from "../../../contexts/PokemonContext";
 import { searchPokemonById } from "../../../data/PokemonDatabase";
+import { Pokemon } from "../../../Types/Pokemon";
 import { getTypeColor } from "../../../Types/PokemonType";
 
 export default function EvolutionChain() {
-  const { selectedPokemon } = usePokemon();
+  const { selectedPokemon, setSelectedPokemon } = usePokemon();
 
   if (!selectedPokemon || !selectedPokemon.evolutionChain) {
     return null;
@@ -14,7 +15,7 @@ export default function EvolutionChain() {
   // Get all Pokemon in the evolution chain
   const evolutionChain = selectedPokemon.evolutionChain
     .map(id => searchPokemonById(id))
-    .filter(pokemon => pokemon !== undefined);
+    .filter((pokemon): pokemon is Pokemon => pokemon !== undefined);
 
   // Find current Pokemon's index in the chain
   const currentIndex = evolutionChain.findIndex(
@@ -58,81 +59,110 @@ export default function EvolutionChain() {
     return position.charAt(0).toUpperCase() + position.slice(1);
   };
 
-  // Get primary type color
-  const typeColor = getTypeColor(currentPokemon.types[0]);
+  const fallbackTypeColor = currentPokemon.types.length
+    ? getTypeColor(currentPokemon.types[0])
+    : "#f5f5f5";
+
+  const getPrimaryTypeColor = (pokemon: Pokemon | null | undefined): string => {
+    if (!pokemon || pokemon.types.length === 0) {
+      return fallbackTypeColor;
+    }
+    return getTypeColor(pokemon.types[0]);
+  };
+
+  const handleSelect = (pokemon: Pokemon | null) => () => {
+    if (pokemon) {
+      setSelectedPokemon(pokemon);
+    }
+  };
 
   return (
-    <div className="evolution-chain-container">
-      {/* Show First/Previous if not at the beginning */}
-      {currentIndex === evolutionChain.length - 1 && currentIndex === 2 && evolutionChain[0] && (
-        <>
-          <EvolutionCard
-            label="First"
-            name={evolutionChain[0].name}
-            imageUrl={evolutionChain[0].imageUrl}
-            typeColor={typeColor}
-          />
-          <span className="evolution-arrow">&gt;</span>
-        </>
-      )}
+    <div className="evolution-chain-section">
+      <div className="evolution-chain-container">
+        <div className="evolution-chain-header">
+          <h2 className="evolution-chain-title">Evolution Chain</h2>
+          <span className="evolution-chain-divider" aria-hidden="true"></span>
+        </div>
 
-      {previousPokemon && currentIndex !== evolutionChain.length - 1 && (
-        <>
-          <EvolutionCard
-            label={getLabel('previous')}
-            name={previousPokemon.name}
-            imageUrl={previousPokemon.imageUrl}
-            typeColor={typeColor}
-          />
-          <span className="evolution-arrow">&gt;</span>
-        </>
-      )}
+        <div className="evolution-chain-cards">
+          {/* Show First/Previous if not at the beginning */}
+          {currentIndex === evolutionChain.length - 1 && currentIndex === 2 && evolutionChain[0] && (
+            <>
+              <EvolutionCard
+                label="First"
+                name={evolutionChain[0].name}
+                imageUrl={evolutionChain[0].imageUrl}
+                typeColor={getPrimaryTypeColor(evolutionChain[0])}
+                onSelect={handleSelect(evolutionChain[0])}
+              />
+              <span className="evolution-arrow">&gt;</span>
+            </>
+          )}
 
-      {currentIndex === evolutionChain.length - 1 && currentIndex > 0 && evolutionChain[currentIndex - 1] && (
-        <>
-          <EvolutionCard
-            label="Previous"
-            name={evolutionChain[currentIndex - 1].name}
-            imageUrl={evolutionChain[currentIndex - 1].imageUrl}
-            typeColor={typeColor}
-          />
-          <span className="evolution-arrow">&gt;</span>
-        </>
-      )}
+          {previousPokemon && currentIndex !== evolutionChain.length - 1 && (
+            <>
+              <EvolutionCard
+                label={getLabel('previous')}
+                name={previousPokemon.name}
+                imageUrl={previousPokemon.imageUrl}
+                typeColor={getPrimaryTypeColor(previousPokemon)}
+                onSelect={handleSelect(previousPokemon)}
+              />
+              <span className="evolution-arrow">&gt;</span>
+            </>
+          )}
 
-      {/* Current Pokemon */}
-      <EvolutionCard
-        label="Current"
-        name={currentPokemon.name}
-        imageUrl={currentPokemon.imageUrl}
-        typeColor={typeColor}
-      />
+          {currentIndex === evolutionChain.length - 1 && currentIndex > 0 && evolutionChain[currentIndex - 1] && (
+            <>
+              <EvolutionCard
+                label="Previous"
+                name={evolutionChain[currentIndex - 1].name}
+                imageUrl={evolutionChain[currentIndex - 1].imageUrl}
+                typeColor={getPrimaryTypeColor(evolutionChain[currentIndex - 1])}
+                onSelect={handleSelect(evolutionChain[currentIndex - 1])}
+              />
+              <span className="evolution-arrow">&gt;</span>
+            </>
+          )}
 
-      {/* Next Pokemon */}
-      {nextPokemon && (
-        <>
-          <span className="evolution-arrow">&gt;</span>
+          {/* Current Pokemon */}
           <EvolutionCard
-            label={getLabel('next')}
-            name={nextPokemon.name}
-            imageUrl={nextPokemon.imageUrl}
-            typeColor={typeColor}
+            label="Current"
+            name={currentPokemon.name}
+            imageUrl={currentPokemon.imageUrl}
+            typeColor={getPrimaryTypeColor(currentPokemon)}
+            onSelect={handleSelect(currentPokemon)}
           />
-        </>
-      )}
 
-      {/* Last Pokemon (if current is first) */}
-      {lastPokemon && (
-        <>
-          <span className="evolution-arrow">&gt;</span>
-          <EvolutionCard
-            label="Last"
-            name={lastPokemon.name}
-            imageUrl={lastPokemon.imageUrl}
-            typeColor={typeColor}
-          />
-        </>
-      )}
+          {/* Next Pokemon */}
+          {nextPokemon && (
+            <>
+              <span className="evolution-arrow">&gt;</span>
+              <EvolutionCard
+                label={getLabel('next')}
+                name={nextPokemon.name}
+                imageUrl={nextPokemon.imageUrl}
+                typeColor={getPrimaryTypeColor(nextPokemon)}
+                onSelect={handleSelect(nextPokemon)}
+              />
+            </>
+          )}
+
+          {/* Last Pokemon (if current is first) */}
+          {lastPokemon && (
+            <>
+              <span className="evolution-arrow">&gt;</span>
+              <EvolutionCard
+                label="Last"
+                name={lastPokemon.name}
+                imageUrl={lastPokemon.imageUrl}
+                typeColor={getPrimaryTypeColor(lastPokemon)}
+                onSelect={handleSelect(lastPokemon)}
+              />
+            </>
+          )}
+        </div>
+      </div>
     </div>
   );
 }

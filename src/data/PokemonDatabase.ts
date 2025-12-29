@@ -33,7 +33,7 @@ const POKEMON_DATABASE: Pokemon[] = [
   new Pokemon(
     26,
     'Raichu',
-    [PokemonType.GRASS],
+    [PokemonType.POISON],
     RaichuImg,
     8,
     300,

@@ -1,10 +1,12 @@
-import './EvolutionCard.css';
+import type { KeyboardEvent } from 'react';
+import './Pokemoncard.css';
 
-interface EvolutionCardProps {
+interface PokemonCardProps {
   label: string;        // "Previous", "Current", or "Next"
   name: string;         // Pokemon name
   imageUrl: string;     // Image URL
   typeColor: string;    // Background color from PokemonType
+  onSelect?: () => void;
 }
 
 // Helper function to convert hex to rgba with opacity
@@ -19,25 +21,44 @@ function hexToRgba(hex: string, opacity: number): string {
   return hex;
 }
 
-export default function EvolutionCard({ label, name, imageUrl, typeColor }: EvolutionCardProps) {
+export default function PokemonCard({ label, name, imageUrl, typeColor, onSelect }: PokemonCardProps) {
   // Use white background for image area
   const imageBackgroundColor = 'rgba(255, 255, 255, 0.9)';
 
+  const className = onSelect
+    ? 'pokemon-card pokemon-card-clickable'
+    : 'pokemon-card';
+
+  const handleKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
+    if (!onSelect) {
+      return;
+    }
+
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      onSelect();
+    }
+  };
+
   return (
     <div 
-      className="evolution-card"
+      className={className}
       style={{ backgroundColor: typeColor }}
+      onClick={onSelect}
+      onKeyDown={handleKeyDown}
+      role={onSelect ? 'button' : undefined}
+      tabIndex={onSelect ? 0 : undefined}
     >
-      <p className="evolution-card-label">{label}</p>
+      <p className="pokemon-card-label">{label}</p>
       
       <div 
-        className="evolution-card-image"
+        className="pokemon-card-image"
         style={{ backgroundColor: imageBackgroundColor }}
       >
         <img src={imageUrl} alt={name} />
       </div>
       
-      <p className="evolution-card-name">{name}</p>
+      <p className="pokemon-card-name">{name}</p>
     </div>
   );
 }
