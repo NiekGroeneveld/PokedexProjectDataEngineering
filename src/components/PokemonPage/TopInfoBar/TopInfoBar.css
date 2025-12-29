@@ -17,6 +17,11 @@
     /* Colors */
     background-color: var(--color-white-primary);
     box-shadow: var(--shadow-standard);
+
+    /* Sticky positioning */
+    position: sticky;
+    top: 190px;
+    z-index: 90;
 }
 
 .pokemon-id{

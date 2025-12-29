@@ -1,0 +1,32 @@
+.info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px 18px;
+  flex: 1 1 0;
+  min-width: 240px;
+  max-width: 300px;
+  height: 190px;
+  
+  background-color: var(--color-white-tertiary);
+  border-radius: 15px;
+  box-shadow: var(--shadow-standard);
+}
+
+.info-label {
+  font-family: var(--font-family-primary);
+  font-weight: 500;
+  font-size: 20px;
+  font-style: normal;
+  color: var(--text-color-primary);
+  margin: 0;
+}
+
+.info-value {
+  font-family: var(--font-family-primary);
+  font-weight: 400;
+  font-size: 20px;
+  font-style: italic;
+  color: #000000;
+  margin: 0;
+}
