@@ -1,0 +1,697 @@
+@prefix ex: <http://example.org/> .
+@prefix poke_simple: <http://example.org/pokemon/simple/> .
+
+poke_simple:1 ex:evolvesTo poke_simple:2 .
+
+poke_simple:10 ex:evolvesTo poke_simple:11 .
+
+poke_simple:100 ex:evolvesTo poke_simple:101 .
+
+poke_simple:102 ex:evolvesTo poke_simple:103 .
+
+poke_simple:104 ex:evolvesTo poke_simple:105 .
+
+poke_simple:108 ex:evolvesTo poke_simple:463 .
+
+poke_simple:109 ex:evolvesTo poke_simple:110 .
+
+poke_simple:111 ex:evolvesTo poke_simple:112 .
+
+poke_simple:114 ex:evolvesTo poke_simple:465 .
+
+poke_simple:116 ex:evolvesTo poke_simple:117 .
+
+poke_simple:118 ex:evolvesTo poke_simple:119 .
+
+poke_simple:120 ex:evolvesTo poke_simple:121 .
+
+poke_simple:123 ex:evolvesTo poke_simple:212 .
+
+poke_simple:129 ex:evolvesTo poke_simple:130 .
+
+poke_simple:13 ex:evolvesTo poke_simple:14 .
+
+poke_simple:133 ex:evolvesTo poke_simple:134,
+        poke_simple:135,
+        poke_simple:136,
+        poke_simple:196,
+        poke_simple:197,
+        poke_simple:470,
+        poke_simple:471,
+        poke_simple:700 .
+
+poke_simple:137 ex:evolvesTo poke_simple:233 .
+
+poke_simple:138 ex:evolvesTo poke_simple:139 .
+
+poke_simple:140 ex:evolvesTo poke_simple:141 .
+
+poke_simple:147 ex:evolvesTo poke_simple:148 .
+
+poke_simple:152 ex:evolvesTo poke_simple:153 .
+
+poke_simple:155 ex:evolvesTo poke_simple:156 .
+
+poke_simple:158 ex:evolvesTo poke_simple:159 .
+
+poke_simple:16 ex:evolvesTo poke_simple:17 .
+
+poke_simple:161 ex:evolvesTo poke_simple:162 .
+
+poke_simple:163 ex:evolvesTo poke_simple:164 .
+
+poke_simple:165 ex:evolvesTo poke_simple:166 .
+
+poke_simple:167 ex:evolvesTo poke_simple:168 .
+
+poke_simple:170 ex:evolvesTo poke_simple:171 .
+
+poke_simple:172 ex:evolvesTo poke_simple:25 .
+
+poke_simple:173 ex:evolvesTo poke_simple:35 .
+
+poke_simple:174 ex:evolvesTo poke_simple:39 .
+
+poke_simple:175 ex:evolvesTo poke_simple:176 .
+
+poke_simple:177 ex:evolvesTo poke_simple:178 .
+
+poke_simple:179 ex:evolvesTo poke_simple:180 .
+
+poke_simple:187 ex:evolvesTo poke_simple:188 .
+
+poke_simple:19 ex:evolvesTo poke_simple:20 .
+
+poke_simple:190 ex:evolvesTo poke_simple:424 .
+
+poke_simple:191 ex:evolvesTo poke_simple:192 .
+
+poke_simple:193 ex:evolvesTo poke_simple:469 .
+
+poke_simple:194 ex:evolvesTo poke_simple:195 .
+
+poke_simple:198 ex:evolvesTo poke_simple:430 .
+
+poke_simple:200 ex:evolvesTo poke_simple:429 .
+
+poke_simple:204 ex:evolvesTo poke_simple:205 .
+
+poke_simple:207 ex:evolvesTo poke_simple:472 .
+
+poke_simple:209 ex:evolvesTo poke_simple:210 .
+
+poke_simple:21 ex:evolvesTo poke_simple:22 .
+
+poke_simple:215 ex:evolvesTo poke_simple:461 .
+
+poke_simple:216 ex:evolvesTo poke_simple:217 .
+
+poke_simple:218 ex:evolvesTo poke_simple:219 .
+
+poke_simple:220 ex:evolvesTo poke_simple:221 .
+
+poke_simple:223 ex:evolvesTo poke_simple:224 .
+
+poke_simple:228 ex:evolvesTo poke_simple:229 .
+
+poke_simple:23 ex:evolvesTo poke_simple:24 .
+
+poke_simple:231 ex:evolvesTo poke_simple:232 .
+
+poke_simple:236 ex:evolvesTo poke_simple:106,
+        poke_simple:107,
+        poke_simple:237 .
+
+poke_simple:238 ex:evolvesTo poke_simple:124 .
+
+poke_simple:239 ex:evolvesTo poke_simple:125 .
+
+poke_simple:240 ex:evolvesTo poke_simple:126 .
+
+poke_simple:246 ex:evolvesTo poke_simple:247 .
+
+poke_simple:252 ex:evolvesTo poke_simple:253 .
+
+poke_simple:255 ex:evolvesTo poke_simple:256 .
+
+poke_simple:258 ex:evolvesTo poke_simple:259 .
+
+poke_simple:261 ex:evolvesTo poke_simple:262 .
+
+poke_simple:263 ex:evolvesTo poke_simple:264 .
+
+poke_simple:265 ex:evolvesTo poke_simple:266,
+        poke_simple:268 .
+
+poke_simple:27 ex:evolvesTo poke_simple:28 .
+
+poke_simple:270 ex:evolvesTo poke_simple:271 .
+
+poke_simple:273 ex:evolvesTo poke_simple:274 .
+
+poke_simple:276 ex:evolvesTo poke_simple:277 .
+
+poke_simple:278 ex:evolvesTo poke_simple:279 .
+
+poke_simple:280 ex:evolvesTo poke_simple:281 .
+
+poke_simple:283 ex:evolvesTo poke_simple:284 .
+
+poke_simple:285 ex:evolvesTo poke_simple:286 .
+
+poke_simple:287 ex:evolvesTo poke_simple:288 .
+
+poke_simple:29 ex:evolvesTo poke_simple:30 .
+
+poke_simple:290 ex:evolvesTo poke_simple:291,
+        poke_simple:292 .
+
+poke_simple:293 ex:evolvesTo poke_simple:294 .
+
+poke_simple:296 ex:evolvesTo poke_simple:297 .
+
+poke_simple:298 ex:evolvesTo poke_simple:183 .
+
+poke_simple:299 ex:evolvesTo poke_simple:476 .
+
+poke_simple:300 ex:evolvesTo poke_simple:301 .
+
+poke_simple:304 ex:evolvesTo poke_simple:305 .
+
+poke_simple:307 ex:evolvesTo poke_simple:308 .
+
+poke_simple:309 ex:evolvesTo poke_simple:310 .
+
+poke_simple:316 ex:evolvesTo poke_simple:317 .
+
+poke_simple:318 ex:evolvesTo poke_simple:319 .
+
+poke_simple:32 ex:evolvesTo poke_simple:33 .
+
+poke_simple:320 ex:evolvesTo poke_simple:321 .
+
+poke_simple:322 ex:evolvesTo poke_simple:323 .
+
+poke_simple:325 ex:evolvesTo poke_simple:326 .
+
+poke_simple:328 ex:evolvesTo poke_simple:329 .
+
+poke_simple:331 ex:evolvesTo poke_simple:332 .
+
+poke_simple:333 ex:evolvesTo poke_simple:334 .
+
+poke_simple:339 ex:evolvesTo poke_simple:340 .
+
+poke_simple:341 ex:evolvesTo poke_simple:342 .
+
+poke_simple:343 ex:evolvesTo poke_simple:344 .
+
+poke_simple:345 ex:evolvesTo poke_simple:346 .
+
+poke_simple:347 ex:evolvesTo poke_simple:348 .
+
+poke_simple:349 ex:evolvesTo poke_simple:350 .
+
+poke_simple:353 ex:evolvesTo poke_simple:354 .
+
+poke_simple:355 ex:evolvesTo poke_simple:356 .
+
+poke_simple:360 ex:evolvesTo poke_simple:202 .
+
+poke_simple:361 ex:evolvesTo poke_simple:362,
+        poke_simple:478 .
+
+poke_simple:363 ex:evolvesTo poke_simple:364 .
+
+poke_simple:366 ex:evolvesTo poke_simple:367,
+        poke_simple:368 .
+
+poke_simple:37 ex:evolvesTo poke_simple:38 .
+
+poke_simple:371 ex:evolvesTo poke_simple:372 .
+
+poke_simple:374 ex:evolvesTo poke_simple:375 .
+
+poke_simple:387 ex:evolvesTo poke_simple:388 .
+
+poke_simple:390 ex:evolvesTo poke_simple:391 .
+
+poke_simple:393 ex:evolvesTo poke_simple:394 .
+
+poke_simple:396 ex:evolvesTo poke_simple:397 .
+
+poke_simple:399 ex:evolvesTo poke_simple:400 .
+
+poke_simple:4 ex:evolvesTo poke_simple:5 .
+
+poke_simple:401 ex:evolvesTo poke_simple:402 .
+
+poke_simple:403 ex:evolvesTo poke_simple:404 .
+
+poke_simple:406 ex:evolvesTo poke_simple:315 .
+
+poke_simple:408 ex:evolvesTo poke_simple:409 .
+
+poke_simple:41 ex:evolvesTo poke_simple:42 .
+
+poke_simple:410 ex:evolvesTo poke_simple:411 .
+
+poke_simple:412 ex:evolvesTo poke_simple:413,
+        poke_simple:414 .
+
+poke_simple:415 ex:evolvesTo poke_simple:416 .
+
+poke_simple:418 ex:evolvesTo poke_simple:419 .
+
+poke_simple:420 ex:evolvesTo poke_simple:421 .
+
+poke_simple:422 ex:evolvesTo poke_simple:423 .
+
+poke_simple:425 ex:evolvesTo poke_simple:426 .
+
+poke_simple:427 ex:evolvesTo poke_simple:428 .
+
+poke_simple:43 ex:evolvesTo poke_simple:44 .
+
+poke_simple:431 ex:evolvesTo poke_simple:432 .
+
+poke_simple:433 ex:evolvesTo poke_simple:358 .
+
+poke_simple:434 ex:evolvesTo poke_simple:435 .
+
+poke_simple:436 ex:evolvesTo poke_simple:437 .
+
+poke_simple:438 ex:evolvesTo poke_simple:185 .
+
+poke_simple:439 ex:evolvesTo poke_simple:122 .
+
+poke_simple:440 ex:evolvesTo poke_simple:113 .
+
+poke_simple:443 ex:evolvesTo poke_simple:444 .
+
+poke_simple:446 ex:evolvesTo poke_simple:143 .
+
+poke_simple:447 ex:evolvesTo poke_simple:448 .
+
+poke_simple:449 ex:evolvesTo poke_simple:450 .
+
+poke_simple:451 ex:evolvesTo poke_simple:452 .
+
+poke_simple:453 ex:evolvesTo poke_simple:454 .
+
+poke_simple:456 ex:evolvesTo poke_simple:457 .
+
+poke_simple:458 ex:evolvesTo poke_simple:226 .
+
+poke_simple:459 ex:evolvesTo poke_simple:460 .
+
+poke_simple:46 ex:evolvesTo poke_simple:47 .
+
+poke_simple:48 ex:evolvesTo poke_simple:49 .
+
+poke_simple:489 ex:evolvesTo poke_simple:490 .
+
+poke_simple:495 ex:evolvesTo poke_simple:496 .
+
+poke_simple:498 ex:evolvesTo poke_simple:499 .
+
+poke_simple:50 ex:evolvesTo poke_simple:51 .
+
+poke_simple:501 ex:evolvesTo poke_simple:502 .
+
+poke_simple:504 ex:evolvesTo poke_simple:505 .
+
+poke_simple:506 ex:evolvesTo poke_simple:507 .
+
+poke_simple:509 ex:evolvesTo poke_simple:510 .
+
+poke_simple:511 ex:evolvesTo poke_simple:512 .
+
+poke_simple:513 ex:evolvesTo poke_simple:514 .
+
+poke_simple:515 ex:evolvesTo poke_simple:516 .
+
+poke_simple:517 ex:evolvesTo poke_simple:518 .
+
+poke_simple:519 ex:evolvesTo poke_simple:520 .
+
+poke_simple:52 ex:evolvesTo poke_simple:53 .
+
+poke_simple:522 ex:evolvesTo poke_simple:523 .
+
+poke_simple:524 ex:evolvesTo poke_simple:525 .
+
+poke_simple:527 ex:evolvesTo poke_simple:528 .
+
+poke_simple:529 ex:evolvesTo poke_simple:530 .
+
+poke_simple:532 ex:evolvesTo poke_simple:533 .
+
+poke_simple:535 ex:evolvesTo poke_simple:536 .
+
+poke_simple:54 ex:evolvesTo poke_simple:55 .
+
+poke_simple:540 ex:evolvesTo poke_simple:541 .
+
+poke_simple:543 ex:evolvesTo poke_simple:544 .
+
+poke_simple:546 ex:evolvesTo poke_simple:547 .
+
+poke_simple:548 ex:evolvesTo poke_simple:549 .
+
+poke_simple:551 ex:evolvesTo poke_simple:552 .
+
+poke_simple:554 ex:evolvesTo poke_simple:555 .
+
+poke_simple:557 ex:evolvesTo poke_simple:558 .
+
+poke_simple:559 ex:evolvesTo poke_simple:560 .
+
+poke_simple:56 ex:evolvesTo poke_simple:57 .
+
+poke_simple:562 ex:evolvesTo poke_simple:563 .
+
+poke_simple:564 ex:evolvesTo poke_simple:565 .
+
+poke_simple:566 ex:evolvesTo poke_simple:567 .
+
+poke_simple:568 ex:evolvesTo poke_simple:569 .
+
+poke_simple:570 ex:evolvesTo poke_simple:571 .
+
+poke_simple:572 ex:evolvesTo poke_simple:573 .
+
+poke_simple:574 ex:evolvesTo poke_simple:575 .
+
+poke_simple:577 ex:evolvesTo poke_simple:578 .
+
+poke_simple:58 ex:evolvesTo poke_simple:59 .
+
+poke_simple:580 ex:evolvesTo poke_simple:581 .
+
+poke_simple:582 ex:evolvesTo poke_simple:583 .
+
+poke_simple:585 ex:evolvesTo poke_simple:586 .
+
+poke_simple:588 ex:evolvesTo poke_simple:589 .
+
+poke_simple:590 ex:evolvesTo poke_simple:591 .
+
+poke_simple:592 ex:evolvesTo poke_simple:593 .
+
+poke_simple:595 ex:evolvesTo poke_simple:596 .
+
+poke_simple:597 ex:evolvesTo poke_simple:598 .
+
+poke_simple:599 ex:evolvesTo poke_simple:600 .
+
+poke_simple:60 ex:evolvesTo poke_simple:61 .
+
+poke_simple:602 ex:evolvesTo poke_simple:603 .
+
+poke_simple:605 ex:evolvesTo poke_simple:606 .
+
+poke_simple:607 ex:evolvesTo poke_simple:608 .
+
+poke_simple:610 ex:evolvesTo poke_simple:611 .
+
+poke_simple:613 ex:evolvesTo poke_simple:614 .
+
+poke_simple:616 ex:evolvesTo poke_simple:617 .
+
+poke_simple:619 ex:evolvesTo poke_simple:620 .
+
+poke_simple:622 ex:evolvesTo poke_simple:623 .
+
+poke_simple:624 ex:evolvesTo poke_simple:625 .
+
+poke_simple:627 ex:evolvesTo poke_simple:628 .
+
+poke_simple:629 ex:evolvesTo poke_simple:630 .
+
+poke_simple:63 ex:evolvesTo poke_simple:64 .
+
+poke_simple:633 ex:evolvesTo poke_simple:634 .
+
+poke_simple:636 ex:evolvesTo poke_simple:637 .
+
+poke_simple:650 ex:evolvesTo poke_simple:651 .
+
+poke_simple:653 ex:evolvesTo poke_simple:654 .
+
+poke_simple:656 ex:evolvesTo poke_simple:657 .
+
+poke_simple:659 ex:evolvesTo poke_simple:660 .
+
+poke_simple:66 ex:evolvesTo poke_simple:67 .
+
+poke_simple:661 ex:evolvesTo poke_simple:662 .
+
+poke_simple:664 ex:evolvesTo poke_simple:665 .
+
+poke_simple:667 ex:evolvesTo poke_simple:668 .
+
+poke_simple:669 ex:evolvesTo poke_simple:670 .
+
+poke_simple:672 ex:evolvesTo poke_simple:673 .
+
+poke_simple:674 ex:evolvesTo poke_simple:675 .
+
+poke_simple:677 ex:evolvesTo poke_simple:678 .
+
+poke_simple:679 ex:evolvesTo poke_simple:680 .
+
+poke_simple:682 ex:evolvesTo poke_simple:683 .
+
+poke_simple:684 ex:evolvesTo poke_simple:685 .
+
+poke_simple:686 ex:evolvesTo poke_simple:687 .
+
+poke_simple:688 ex:evolvesTo poke_simple:689 .
+
+poke_simple:69 ex:evolvesTo poke_simple:70 .
+
+poke_simple:690 ex:evolvesTo poke_simple:691 .
+
+poke_simple:692 ex:evolvesTo poke_simple:693 .
+
+poke_simple:694 ex:evolvesTo poke_simple:695 .
+
+poke_simple:696 ex:evolvesTo poke_simple:697 .
+
+poke_simple:698 ex:evolvesTo poke_simple:699 .
+
+poke_simple:7 ex:evolvesTo poke_simple:8 .
+
+poke_simple:704 ex:evolvesTo poke_simple:705 .
+
+poke_simple:708 ex:evolvesTo poke_simple:709 .
+
+poke_simple:710 ex:evolvesTo poke_simple:711 .
+
+poke_simple:712 ex:evolvesTo poke_simple:713 .
+
+poke_simple:714 ex:evolvesTo poke_simple:715 .
+
+poke_simple:72 ex:evolvesTo poke_simple:73 .
+
+poke_simple:74 ex:evolvesTo poke_simple:75 .
+
+poke_simple:77 ex:evolvesTo poke_simple:78 .
+
+poke_simple:79 ex:evolvesTo poke_simple:199,
+        poke_simple:80 .
+
+poke_simple:81 ex:evolvesTo poke_simple:82 .
+
+poke_simple:84 ex:evolvesTo poke_simple:85 .
+
+poke_simple:86 ex:evolvesTo poke_simple:87 .
+
+poke_simple:88 ex:evolvesTo poke_simple:89 .
+
+poke_simple:90 ex:evolvesTo poke_simple:91 .
+
+poke_simple:92 ex:evolvesTo poke_simple:93 .
+
+poke_simple:95 ex:evolvesTo poke_simple:208 .
+
+poke_simple:96 ex:evolvesTo poke_simple:97 .
+
+poke_simple:98 ex:evolvesTo poke_simple:99 .
+
+poke_simple:11 ex:evolvesTo poke_simple:12 .
+
+poke_simple:112 ex:evolvesTo poke_simple:464 .
+
+poke_simple:113 ex:evolvesTo poke_simple:242 .
+
+poke_simple:117 ex:evolvesTo poke_simple:230 .
+
+poke_simple:125 ex:evolvesTo poke_simple:466 .
+
+poke_simple:126 ex:evolvesTo poke_simple:467 .
+
+poke_simple:14 ex:evolvesTo poke_simple:15 .
+
+poke_simple:148 ex:evolvesTo poke_simple:149 .
+
+poke_simple:153 ex:evolvesTo poke_simple:154 .
+
+poke_simple:156 ex:evolvesTo poke_simple:157 .
+
+poke_simple:159 ex:evolvesTo poke_simple:160 .
+
+poke_simple:17 ex:evolvesTo poke_simple:18 .
+
+poke_simple:176 ex:evolvesTo poke_simple:468 .
+
+poke_simple:180 ex:evolvesTo poke_simple:181 .
+
+poke_simple:183 ex:evolvesTo poke_simple:184 .
+
+poke_simple:188 ex:evolvesTo poke_simple:189 .
+
+poke_simple:2 ex:evolvesTo poke_simple:3 .
+
+poke_simple:221 ex:evolvesTo poke_simple:473 .
+
+poke_simple:233 ex:evolvesTo poke_simple:474 .
+
+poke_simple:247 ex:evolvesTo poke_simple:248 .
+
+poke_simple:25 ex:evolvesTo poke_simple:26 .
+
+poke_simple:253 ex:evolvesTo poke_simple:254 .
+
+poke_simple:256 ex:evolvesTo poke_simple:257 .
+
+poke_simple:259 ex:evolvesTo poke_simple:260 .
+
+poke_simple:266 ex:evolvesTo poke_simple:267 .
+
+poke_simple:268 ex:evolvesTo poke_simple:269 .
+
+poke_simple:271 ex:evolvesTo poke_simple:272 .
+
+poke_simple:274 ex:evolvesTo poke_simple:275 .
+
+poke_simple:281 ex:evolvesTo poke_simple:282,
+        poke_simple:475 .
+
+poke_simple:288 ex:evolvesTo poke_simple:289 .
+
+poke_simple:294 ex:evolvesTo poke_simple:295 .
+
+poke_simple:30 ex:evolvesTo poke_simple:31 .
+
+poke_simple:305 ex:evolvesTo poke_simple:306 .
+
+poke_simple:315 ex:evolvesTo poke_simple:407 .
+
+poke_simple:329 ex:evolvesTo poke_simple:330 .
+
+poke_simple:33 ex:evolvesTo poke_simple:34 .
+
+poke_simple:35 ex:evolvesTo poke_simple:36 .
+
+poke_simple:356 ex:evolvesTo poke_simple:477 .
+
+poke_simple:364 ex:evolvesTo poke_simple:365 .
+
+poke_simple:372 ex:evolvesTo poke_simple:373 .
+
+poke_simple:375 ex:evolvesTo poke_simple:376 .
+
+poke_simple:388 ex:evolvesTo poke_simple:389 .
+
+poke_simple:39 ex:evolvesTo poke_simple:40 .
+
+poke_simple:391 ex:evolvesTo poke_simple:392 .
+
+poke_simple:394 ex:evolvesTo poke_simple:395 .
+
+poke_simple:397 ex:evolvesTo poke_simple:398 .
+
+poke_simple:404 ex:evolvesTo poke_simple:405 .
+
+poke_simple:42 ex:evolvesTo poke_simple:169 .
+
+poke_simple:44 ex:evolvesTo poke_simple:182,
+        poke_simple:45 .
+
+poke_simple:444 ex:evolvesTo poke_simple:445 .
+
+poke_simple:496 ex:evolvesTo poke_simple:497 .
+
+poke_simple:499 ex:evolvesTo poke_simple:500 .
+
+poke_simple:5 ex:evolvesTo poke_simple:6 .
+
+poke_simple:502 ex:evolvesTo poke_simple:503 .
+
+poke_simple:507 ex:evolvesTo poke_simple:508 .
+
+poke_simple:520 ex:evolvesTo poke_simple:521 .
+
+poke_simple:525 ex:evolvesTo poke_simple:526 .
+
+poke_simple:533 ex:evolvesTo poke_simple:534 .
+
+poke_simple:536 ex:evolvesTo poke_simple:537 .
+
+poke_simple:541 ex:evolvesTo poke_simple:542 .
+
+poke_simple:544 ex:evolvesTo poke_simple:545 .
+
+poke_simple:552 ex:evolvesTo poke_simple:553 .
+
+poke_simple:575 ex:evolvesTo poke_simple:576 .
+
+poke_simple:578 ex:evolvesTo poke_simple:579 .
+
+poke_simple:583 ex:evolvesTo poke_simple:584 .
+
+poke_simple:600 ex:evolvesTo poke_simple:601 .
+
+poke_simple:603 ex:evolvesTo poke_simple:604 .
+
+poke_simple:608 ex:evolvesTo poke_simple:609 .
+
+poke_simple:61 ex:evolvesTo poke_simple:186,
+        poke_simple:62 .
+
+poke_simple:611 ex:evolvesTo poke_simple:612 .
+
+poke_simple:634 ex:evolvesTo poke_simple:635 .
+
+poke_simple:64 ex:evolvesTo poke_simple:65 .
+
+poke_simple:651 ex:evolvesTo poke_simple:652 .
+
+poke_simple:654 ex:evolvesTo poke_simple:655 .
+
+poke_simple:657 ex:evolvesTo poke_simple:658 .
+
+poke_simple:662 ex:evolvesTo poke_simple:663 .
+
+poke_simple:665 ex:evolvesTo poke_simple:666 .
+
+poke_simple:67 ex:evolvesTo poke_simple:68 .
+
+poke_simple:670 ex:evolvesTo poke_simple:671 .
+
+poke_simple:680 ex:evolvesTo poke_simple:681 .
+
+poke_simple:70 ex:evolvesTo poke_simple:71 .
+
+poke_simple:705 ex:evolvesTo poke_simple:706 .
+
+poke_simple:75 ex:evolvesTo poke_simple:76 .
+
+poke_simple:8 ex:evolvesTo poke_simple:9 .
+
+poke_simple:82 ex:evolvesTo poke_simple:462 .
+
+poke_simple:93 ex:evolvesTo poke_simple:94 .
+

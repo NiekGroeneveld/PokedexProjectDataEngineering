@@ -1,0 +1,2882 @@
+@prefix ability: <http://example.org/abilities/> .
+@prefix ex: <http://example.org/> .
+@prefix poke_simple: <http://example.org/pokemon/simple/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ability:Adaptability a ex:Ability ;
+    ex:abilityName "Adaptability"^^xsd:string ;
+    ex:pokemonCount "10"^^xsd:int ;
+    ex:possessedBy poke_simple:133,
+        poke_simple:341,
+        poke_simple:342,
+        poke_simple:349,
+        poke_simple:474,
+        poke_simple:550,
+        poke_simple:690,
+        poke_simple:691,
+        poke_simple:734,
+        poke_simple:735 .
+
+ability:Aftermath a ex:Ability ;
+    ex:abilityName "Aftermath"^^xsd:string ;
+    ex:pokemonCount "8"^^xsd:int ;
+    ex:possessedBy poke_simple:100,
+        poke_simple:101,
+        poke_simple:425,
+        poke_simple:426,
+        poke_simple:434,
+        poke_simple:435,
+        poke_simple:568,
+        poke_simple:569 .
+
+ability:Air_Lock a ex:Ability ;
+    ex:abilityName "Air Lock"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:384 .
+
+ability:Analytic a ex:Ability ;
+    ex:abilityName "Analytic"^^xsd:string ;
+    ex:pokemonCount "12"^^xsd:int ;
+    ex:possessedBy poke_simple:120,
+        poke_simple:121,
+        poke_simple:137,
+        poke_simple:233,
+        poke_simple:462,
+        poke_simple:474,
+        poke_simple:504,
+        poke_simple:505,
+        poke_simple:605,
+        poke_simple:606,
+        poke_simple:81,
+        poke_simple:82 .
+
+ability:Anger_Point a ex:Ability ;
+    ex:abilityName "Anger Point"^^xsd:string ;
+    ex:pokemonCount "9"^^xsd:int ;
+    ex:possessedBy poke_simple:128,
+        poke_simple:323,
+        poke_simple:551,
+        poke_simple:552,
+        poke_simple:553,
+        poke_simple:56,
+        poke_simple:57,
+        poke_simple:739,
+        poke_simple:740 .
+
+ability:Anticipation a ex:Ability ;
+    ex:abilityName "Anticipation"^^xsd:string ;
+    ex:pokemonCount "7"^^xsd:int ;
+    ex:possessedBy poke_simple:133,
+        poke_simple:339,
+        poke_simple:340,
+        poke_simple:413,
+        poke_simple:453,
+        poke_simple:454,
+        poke_simple:598 .
+
+ability:Arena_Trap a ex:Ability ;
+    ex:abilityName "Arena Trap"^^xsd:string ;
+    ex:pokemonCount "3"^^xsd:int ;
+    ex:possessedBy poke_simple:328,
+        poke_simple:50,
+        poke_simple:51 .
+
+ability:Aroma_Veil a ex:Ability ;
+    ex:abilityName "Aroma Veil"^^xsd:string ;
+    ex:pokemonCount "2"^^xsd:int ;
+    ex:possessedBy poke_simple:682,
+        poke_simple:683 .
+
+ability:Aura_Break a ex:Ability ;
+    ex:abilityName "Aura Break"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:718 .
+
+ability:Bad_Dreams a ex:Ability ;
+    ex:abilityName "Bad Dreams"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:491 .
+
+ability:Battery a ex:Ability ;
+    ex:abilityName "Battery"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:737 .
+
+ability:Battle_Armor a ex:Ability ;
+    ex:abilityName "Battle Armor"^^xsd:string ;
+    ex:pokemonCount "9"^^xsd:int ;
+    ex:possessedBy poke_simple:104,
+        poke_simple:105,
+        poke_simple:140,
+        poke_simple:141,
+        poke_simple:347,
+        poke_simple:348,
+        poke_simple:451,
+        poke_simple:452,
+        poke_simple:772 .
+
+ability:Battle_Bond a ex:Ability ;
+    ex:abilityName "Battle Bond"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:658 .
+
+ability:Beast_Boost a ex:Ability ;
+    ex:abilityName "Beast Boost"^^xsd:string ;
+    ex:pokemonCount "7"^^xsd:int ;
+    ex:possessedBy poke_simple:793,
+        poke_simple:794,
+        poke_simple:795,
+        poke_simple:796,
+        poke_simple:797,
+        poke_simple:798,
+        poke_simple:799 .
+
+ability:Berserk a ex:Ability ;
+    ex:abilityName "Berserk"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:780 .
+
+ability:Big_Pecks a ex:Ability ;
+    ex:abilityName "Big Pecks"^^xsd:string ;
+    ex:pokemonCount "12"^^xsd:int ;
+    ex:possessedBy poke_simple:16,
+        poke_simple:17,
+        poke_simple:18,
+        poke_simple:441,
+        poke_simple:519,
+        poke_simple:520,
+        poke_simple:521,
+        poke_simple:580,
+        poke_simple:581,
+        poke_simple:629,
+        poke_simple:630,
+        poke_simple:661 .
+
+ability:Blaze a ex:Ability ;
+    ex:abilityName "Blaze"^^xsd:string ;
+    ex:pokemonCount "23"^^xsd:int ;
+    ex:possessedBy poke_simple:155,
+        poke_simple:156,
+        poke_simple:157,
+        poke_simple:255,
+        poke_simple:256,
+        poke_simple:257,
+        poke_simple:390,
+        poke_simple:391,
+        poke_simple:392,
+        poke_simple:4,
+        poke_simple:498,
+        poke_simple:499,
+        poke_simple:5,
+        poke_simple:500,
+        poke_simple:513,
+        poke_simple:514,
+        poke_simple:6,
+        poke_simple:653,
+        poke_simple:654,
+        poke_simple:655,
+        poke_simple:725,
+        poke_simple:726,
+        poke_simple:727 .
+
+ability:Bulletproof a ex:Ability ;
+    ex:abilityName "Bulletproof"^^xsd:string ;
+    ex:pokemonCount "6"^^xsd:int ;
+    ex:possessedBy poke_simple:650,
+        poke_simple:651,
+        poke_simple:652,
+        poke_simple:782,
+        poke_simple:783,
+        poke_simple:784 .
+
+ability:Cheek_Pouch a ex:Ability ;
+    ex:abilityName "Cheek Pouch"^^xsd:string ;
+    ex:pokemonCount "3"^^xsd:int ;
+    ex:possessedBy poke_simple:659,
+        poke_simple:660,
+        poke_simple:702 .
+
+ability:Chlorophyll a ex:Ability ;
+    ex:abilityName "Chlorophyll"^^xsd:string ;
+    ex:pokemonCount "35"^^xsd:int ;
+    ex:possessedBy poke_simple:1,
+        poke_simple:102,
+        poke_simple:103,
+        poke_simple:114,
+        poke_simple:182,
+        poke_simple:187,
+        poke_simple:188,
+        poke_simple:189,
+        poke_simple:191,
+        poke_simple:192,
+        poke_simple:2,
+        poke_simple:273,
+        poke_simple:274,
+        poke_simple:275,
+        poke_simple:3,
+        poke_simple:357,
+        poke_simple:420,
+        poke_simple:43,
+        poke_simple:44,
+        poke_simple:45,
+        poke_simple:465,
+        poke_simple:470,
+        poke_simple:540,
+        poke_simple:541,
+        poke_simple:542,
+        poke_simple:546,
+        poke_simple:547,
+        poke_simple:548,
+        poke_simple:549,
+        poke_simple:556,
+        poke_simple:585,
+        poke_simple:586,
+        poke_simple:69,
+        poke_simple:70,
+        poke_simple:71 .
+
+ability:Clear_Body a ex:Ability ;
+    ex:abilityName "Clear Body"^^xsd:string ;
+    ex:pokemonCount "13"^^xsd:int ;
+    ex:possessedBy poke_simple:374,
+        poke_simple:375,
+        poke_simple:376,
+        poke_simple:377,
+        poke_simple:378,
+        poke_simple:379,
+        poke_simple:599,
+        poke_simple:600,
+        poke_simple:601,
+        poke_simple:703,
+        poke_simple:719,
+        poke_simple:72,
+        poke_simple:73 .
+
+ability:Cloud_Nine a ex:Ability ;
+    ex:abilityName "Cloud Nine"^^xsd:string ;
+    ex:pokemonCount "7"^^xsd:int ;
+    ex:possessedBy poke_simple:108,
+        poke_simple:333,
+        poke_simple:334,
+        poke_simple:463,
+        poke_simple:54,
+        poke_simple:55,
+        poke_simple:780 .
+
+ability:Color_Change a ex:Ability ;
+    ex:abilityName "Color Change"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:352 .
+
+ability:Comatose a ex:Ability ;
+    ex:abilityName "Comatose"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:775 .
+
+ability:Competitive a ex:Ability ;
+    ex:abilityName "Competitive"^^xsd:string ;
+    ex:pokemonCount "8"^^xsd:int ;
+    ex:possessedBy poke_simple:174,
+        poke_simple:350,
+        poke_simple:39,
+        poke_simple:40,
+        poke_simple:574,
+        poke_simple:575,
+        poke_simple:576,
+        poke_simple:678 .
+
+ability:Compoundeyes a ex:Ability ;
+    ex:abilityName "Compoundeyes"^^xsd:string ;
+    ex:pokemonCount "9"^^xsd:int ;
+    ex:possessedBy poke_simple:12,
+        poke_simple:193,
+        poke_simple:269,
+        poke_simple:290,
+        poke_simple:48,
+        poke_simple:595,
+        poke_simple:596,
+        poke_simple:664,
+        poke_simple:666 .
+
+ability:Contrary a ex:Ability ;
+    ex:abilityName "Contrary"^^xsd:string ;
+    ex:pokemonCount "9"^^xsd:int ;
+    ex:possessedBy poke_simple:213,
+        poke_simple:327,
+        poke_simple:495,
+        poke_simple:496,
+        poke_simple:497,
+        poke_simple:686,
+        poke_simple:687,
+        poke_simple:753,
+        poke_simple:754 .
+
+ability:Corrosion a ex:Ability ;
+    ex:abilityName "Corrosion"^^xsd:string ;
+    ex:pokemonCount "2"^^xsd:int ;
+    ex:possessedBy poke_simple:757,
+        poke_simple:758 .
+
+ability:Cursed_Body a ex:Ability ;
+    ex:abilityName "Cursed Body"^^xsd:string ;
+    ex:pokemonCount "7"^^xsd:int ;
+    ex:possessedBy poke_simple:105,
+        poke_simple:353,
+        poke_simple:354,
+        poke_simple:478,
+        poke_simple:592,
+        poke_simple:593,
+        poke_simple:94 .
+
+ability:Cute_Charm a ex:Ability ;
+    ex:abilityName "Cute Charm"^^xsd:string ;
+    ex:pokemonCount "14"^^xsd:int ;
+    ex:possessedBy poke_simple:173,
+        poke_simple:174,
+        poke_simple:300,
+        poke_simple:301,
+        poke_simple:35,
+        poke_simple:350,
+        poke_simple:36,
+        poke_simple:39,
+        poke_simple:40,
+        poke_simple:428,
+        poke_simple:572,
+        poke_simple:573,
+        poke_simple:700,
+        poke_simple:759 .
+
+ability:Damp a ex:Ability ;
+    ex:abilityName "Damp"^^xsd:string ;
+    ex:pokemonCount "18"^^xsd:int ;
+    ex:possessedBy poke_simple:116,
+        poke_simple:117,
+        poke_simple:186,
+        poke_simple:194,
+        poke_simple:195,
+        poke_simple:230,
+        poke_simple:258,
+        poke_simple:259,
+        poke_simple:260,
+        poke_simple:46,
+        poke_simple:47,
+        poke_simple:54,
+        poke_simple:55,
+        poke_simple:592,
+        poke_simple:593,
+        poke_simple:60,
+        poke_simple:61,
+        poke_simple:62 .
+
+ability:Dancer a ex:Ability ;
+    ex:abilityName "Dancer"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:741 .
+
+ability:Dark_Aura a ex:Ability ;
+    ex:abilityName "Dark Aura"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:717 .
+
+ability:Dazzling a ex:Ability ;
+    ex:abilityName "Dazzling"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:779 .
+
+ability:Defeatist a ex:Ability ;
+    ex:abilityName "Defeatist"^^xsd:string ;
+    ex:pokemonCount "2"^^xsd:int ;
+    ex:possessedBy poke_simple:566,
+        poke_simple:567 .
+
+ability:Defiant a ex:Ability ;
+    ex:abilityName "Defiant"^^xsd:string ;
+    ex:pokemonCount "13"^^xsd:int ;
+    ex:possessedBy poke_simple:393,
+        poke_simple:394,
+        poke_simple:395,
+        poke_simple:432,
+        poke_simple:56,
+        poke_simple:57,
+        poke_simple:624,
+        poke_simple:625,
+        poke_simple:628,
+        poke_simple:641,
+        poke_simple:642,
+        poke_simple:766,
+        poke_simple:83 .
+
+ability:Disguise a ex:Ability ;
+    ex:abilityName "Disguise"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:778 .
+
+ability:Download a ex:Ability ;
+    ex:abilityName "Download"^^xsd:string ;
+    ex:pokemonCount "4"^^xsd:int ;
+    ex:possessedBy poke_simple:137,
+        poke_simple:233,
+        poke_simple:474,
+        poke_simple:649 .
+
+ability:Drizzle a ex:Ability ;
+    ex:abilityName "Drizzle"^^xsd:string ;
+    ex:pokemonCount "3"^^xsd:int ;
+    ex:possessedBy poke_simple:186,
+        poke_simple:279,
+        poke_simple:382 .
+
+ability:Drought a ex:Ability ;
+    ex:abilityName "Drought"^^xsd:string ;
+    ex:pokemonCount "4"^^xsd:int ;
+    ex:possessedBy poke_simple:324,
+        poke_simple:37,
+        poke_simple:38,
+        poke_simple:383 .
+
+ability:Dry_Skin a ex:Ability ;
+    ex:abilityName "Dry Skin"^^xsd:string ;
+    ex:pokemonCount "7"^^xsd:int ;
+    ex:possessedBy poke_simple:124,
+        poke_simple:453,
+        poke_simple:454,
+        poke_simple:46,
+        poke_simple:47,
+        poke_simple:694,
+        poke_simple:695 .
+
+ability:Early_Bird a ex:Ability ;
+    ex:abilityName "Early Bird"^^xsd:string ;
+    ex:pokemonCount "15"^^xsd:int ;
+    ex:possessedBy poke_simple:115,
+        poke_simple:165,
+        poke_simple:166,
+        poke_simple:177,
+        poke_simple:178,
+        poke_simple:191,
+        poke_simple:192,
+        poke_simple:203,
+        poke_simple:228,
+        poke_simple:229,
+        poke_simple:273,
+        poke_simple:274,
+        poke_simple:275,
+        poke_simple:84,
+        poke_simple:85 .
+
+ability:Effect_Spore a ex:Ability ;
+    ex:abilityName "Effect Spore"^^xsd:string ;
+    ex:pokemonCount "9"^^xsd:int ;
+    ex:possessedBy poke_simple:285,
+        poke_simple:286,
+        poke_simple:45,
+        poke_simple:46,
+        poke_simple:47,
+        poke_simple:590,
+        poke_simple:591,
+        poke_simple:755,
+        poke_simple:756 .
+
+ability:Electric_Surge a ex:Ability ;
+    ex:abilityName "Electric Surge"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:785 .
+
+ability:Emergency_Exit a ex:Ability ;
+    ex:abilityName "Emergency Exit"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:768 .
+
+ability:Fairy_Aura a ex:Ability ;
+    ex:abilityName "Fairy Aura"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:716 .
+
+ability:Filter a ex:Ability ;
+    ex:abilityName "Filter"^^xsd:string ;
+    ex:pokemonCount "2"^^xsd:int ;
+    ex:possessedBy poke_simple:122,
+        poke_simple:439 .
+
+ability:Flame_Body a ex:Ability ;
+    ex:abilityName "Flame Body"^^xsd:string ;
+    ex:pokemonCount "16"^^xsd:int ;
+    ex:possessedBy poke_simple:126,
+        poke_simple:146,
+        poke_simple:218,
+        poke_simple:219,
+        poke_simple:240,
+        poke_simple:467,
+        poke_simple:485,
+        poke_simple:607,
+        poke_simple:608,
+        poke_simple:609,
+        poke_simple:636,
+        poke_simple:637,
+        poke_simple:662,
+        poke_simple:663,
+        poke_simple:77,
+        poke_simple:78 .
+
+ability:Flare_Boost a ex:Ability ;
+    ex:abilityName "Flare Boost"^^xsd:string ;
+    ex:pokemonCount "2"^^xsd:int ;
+    ex:possessedBy poke_simple:425,
+        poke_simple:426 .
+
+ability:Flash_Fire a ex:Ability ;
+    ex:abilityName "Flash Fire"^^xsd:string ;
+    ex:pokemonCount "17"^^xsd:int ;
+    ex:possessedBy poke_simple:136,
+        poke_simple:155,
+        poke_simple:156,
+        poke_simple:157,
+        poke_simple:228,
+        poke_simple:229,
+        poke_simple:37,
+        poke_simple:38,
+        poke_simple:485,
+        poke_simple:58,
+        poke_simple:59,
+        poke_simple:607,
+        poke_simple:608,
+        poke_simple:609,
+        poke_simple:631,
+        poke_simple:77,
+        poke_simple:78 .
+
+ability:Flower_Gift a ex:Ability ;
+    ex:abilityName "Flower Gift"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:421 .
+
+ability:Flower_Veil a ex:Ability ;
+    ex:abilityName "Flower Veil"^^xsd:string ;
+    ex:pokemonCount "4"^^xsd:int ;
+    ex:possessedBy poke_simple:669,
+        poke_simple:670,
+        poke_simple:671,
+        poke_simple:764 .
+
+ability:Fluffy a ex:Ability ;
+    ex:abilityName "Fluffy"^^xsd:string ;
+    ex:pokemonCount "2"^^xsd:int ;
+    ex:possessedBy poke_simple:759,
+        poke_simple:760 .
+
+ability:Forecast a ex:Ability ;
+    ex:abilityName "Forecast"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:351 .
+
+ability:Forewarn a ex:Ability ;
+    ex:abilityName "Forewarn"^^xsd:string ;
+    ex:pokemonCount "6"^^xsd:int ;
+    ex:possessedBy poke_simple:124,
+        poke_simple:238,
+        poke_simple:517,
+        poke_simple:518,
+        poke_simple:96,
+        poke_simple:97 .
+
+ability:Friend_Guard a ex:Ability ;
+    ex:abilityName "Friend Guard"^^xsd:string ;
+    ex:pokemonCount "8"^^xsd:int ;
+    ex:possessedBy poke_simple:173,
+        poke_simple:174,
+        poke_simple:35,
+        poke_simple:39,
+        poke_simple:440,
+        poke_simple:664,
+        poke_simple:665,
+        poke_simple:666 .
+
+ability:Frisk a ex:Ability ;
+    ex:abilityName "Frisk"^^xsd:string ;
+    ex:pokemonCount "21"^^xsd:int ;
+    ex:possessedBy poke_simple:103,
+        poke_simple:161,
+        poke_simple:162,
+        poke_simple:193,
+        poke_simple:234,
+        poke_simple:353,
+        poke_simple:354,
+        poke_simple:355,
+        poke_simple:356,
+        poke_simple:40,
+        poke_simple:469,
+        poke_simple:477,
+        poke_simple:574,
+        poke_simple:575,
+        poke_simple:576,
+        poke_simple:708,
+        poke_simple:709,
+        poke_simple:710,
+        poke_simple:711,
+        poke_simple:714,
+        poke_simple:715 .
+
+ability:Full_Metal_Body a ex:Ability ;
+    ex:abilityName "Full Metal Body"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:791 .
+
+ability:Fur_Coat a ex:Ability ;
+    ex:abilityName "Fur Coat"^^xsd:string ;
+    ex:pokemonCount "2"^^xsd:int ;
+    ex:possessedBy poke_simple:53,
+        poke_simple:676 .
+
+ability:Gale_Wings a ex:Ability ;
+    ex:abilityName "Gale Wings"^^xsd:string ;
+    ex:pokemonCount "3"^^xsd:int ;
+    ex:possessedBy poke_simple:661,
+        poke_simple:662,
+        poke_simple:663 .
+
+ability:Galvanize a ex:Ability ;
+    ex:abilityName "Galvanize"^^xsd:string ;
+    ex:pokemonCount "3"^^xsd:int ;
+    ex:possessedBy poke_simple:74,
+        poke_simple:75,
+        poke_simple:76 .
+
+ability:Gluttony a ex:Ability ;
+    ex:abilityName "Gluttony"^^xsd:string ;
+    ex:pokemonCount "23"^^xsd:int ;
+    ex:possessedBy poke_simple:143,
+        poke_simple:19,
+        poke_simple:20,
+        poke_simple:213,
+        poke_simple:263,
+        poke_simple:264,
+        poke_simple:316,
+        poke_simple:317,
+        poke_simple:325,
+        poke_simple:326,
+        poke_simple:446,
+        poke_simple:511,
+        poke_simple:512,
+        poke_simple:513,
+        poke_simple:514,
+        poke_simple:515,
+        poke_simple:516,
+        poke_simple:631,
+        poke_simple:69,
+        poke_simple:70,
+        poke_simple:71,
+        poke_simple:88,
+        poke_simple:89 .
+
+ability:Gooey a ex:Ability ;
+    ex:abilityName "Gooey"^^xsd:string ;
+    ex:pokemonCount "3"^^xsd:int ;
+    ex:possessedBy poke_simple:704,
+        poke_simple:705,
+        poke_simple:706 .
+
+ability:Grass_Pelt a ex:Ability ;
+    ex:abilityName "Grass Pelt"^^xsd:string ;
+    ex:pokemonCount "2"^^xsd:int ;
+    ex:possessedBy poke_simple:672,
+        poke_simple:673 .
+
+ability:Grassy_Surge a ex:Ability ;
+    ex:abilityName "Grassy Surge"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:787 .
+
+ability:Guts a ex:Ability ;
+    ex:abilityName "Guts"^^xsd:string ;
+    ex:pokemonCount "21"^^xsd:int ;
+    ex:possessedBy poke_simple:136,
+        poke_simple:19,
+        poke_simple:20,
+        poke_simple:214,
+        poke_simple:217,
+        poke_simple:236,
+        poke_simple:246,
+        poke_simple:276,
+        poke_simple:277,
+        poke_simple:296,
+        poke_simple:297,
+        poke_simple:403,
+        poke_simple:404,
+        poke_simple:405,
+        poke_simple:532,
+        poke_simple:533,
+        poke_simple:534,
+        poke_simple:538,
+        poke_simple:66,
+        poke_simple:67,
+        poke_simple:68 .
+
+ability:Harvest a ex:Ability ;
+    ex:abilityName "Harvest"^^xsd:string ;
+    ex:pokemonCount "6"^^xsd:int ;
+    ex:possessedBy poke_simple:102,
+        poke_simple:103,
+        poke_simple:357,
+        poke_simple:708,
+        poke_simple:709 .
+
+ability:Healer a ex:Ability ;
+    ex:abilityName "Healer"^^xsd:string ;
+    ex:pokemonCount "7"^^xsd:int ;
+    ex:possessedBy poke_simple:113,
+        poke_simple:182,
+        poke_simple:242,
+        poke_simple:531,
+        poke_simple:594,
+        poke_simple:682,
+        poke_simple:683 .
+
+ability:Heatproof a ex:Ability ;
+    ex:abilityName "Heatproof"^^xsd:string ;
+    ex:pokemonCount "2"^^xsd:int ;
+    ex:possessedBy poke_simple:436,
+        poke_simple:437 .
+
+ability:Heavy_Metal a ex:Ability ;
+    ex:abilityName "Heavy Metal"^^xsd:string ;
+    ex:pokemonCount "5"^^xsd:int ;
+    ex:possessedBy poke_simple:304,
+        poke_simple:305,
+        poke_simple:306,
+        poke_simple:436,
+        poke_simple:437 .
+
+ability:Honey_Gather a ex:Ability ;
+    ex:abilityName "Honey Gather"^^xsd:string ;
+    ex:pokemonCount "4"^^xsd:int ;
+    ex:possessedBy poke_simple:216,
+        poke_simple:415,
+        poke_simple:742,
+        poke_simple:743 .
+
+ability:Huge_Power a ex:Ability ;
+    ex:abilityName "Huge Power"^^xsd:string ;
+    ex:pokemonCount "5"^^xsd:int ;
+    ex:possessedBy poke_simple:183,
+        poke_simple:184,
+        poke_simple:298,
+        poke_simple:659,
+        poke_simple:660 .
+
+ability:Hustle a ex:Ability ;
+    ex:abilityName "Hustle"^^xsd:string ;
+    ex:pokemonCount "20"^^xsd:int ;
+    ex:possessedBy poke_simple:175,
+        poke_simple:176,
+        poke_simple:19,
+        poke_simple:20,
+        poke_simple:222,
+        poke_simple:223,
+        poke_simple:225,
+        poke_simple:29,
+        poke_simple:30,
+        poke_simple:32,
+        poke_simple:33,
+        poke_simple:415,
+        poke_simple:468,
+        poke_simple:554,
+        poke_simple:627,
+        poke_simple:632,
+        poke_simple:633,
+        poke_simple:634 .
+
+ability:Hydration a ex:Ability ;
+    ex:abilityName "Hydration"^^xsd:string ;
+    ex:pokemonCount "22"^^xsd:int ;
+    ex:possessedBy poke_simple:131,
+        poke_simple:134,
+        poke_simple:238,
+        poke_simple:278,
+        poke_simple:339,
+        poke_simple:340,
+        poke_simple:368,
+        poke_simple:370,
+        poke_simple:489,
+        poke_simple:490,
+        poke_simple:535,
+        poke_simple:536,
+        poke_simple:580,
+        poke_simple:581,
+        poke_simple:594,
+        poke_simple:616,
+        poke_simple:617,
+        poke_simple:704,
+        poke_simple:705,
+        poke_simple:706,
+        poke_simple:86,
+        poke_simple:87 .
+
+ability:Hyper_Cutter a ex:Ability ;
+    ex:abilityName "Hyper Cutter"^^xsd:string ;
+    ex:pokemonCount "11"^^xsd:int ;
+    ex:possessedBy poke_simple:127,
+        poke_simple:207,
+        poke_simple:303,
+        poke_simple:328,
+        poke_simple:341,
+        poke_simple:342,
+        poke_simple:472,
+        poke_simple:739,
+        poke_simple:740,
+        poke_simple:98,
+        poke_simple:99 .
+
+ability:Ice_Body a ex:Ability ;
+    ex:abilityName "Ice Body"^^xsd:string ;
+    ex:pokemonCount "14"^^xsd:int ;
+    ex:possessedBy poke_simple:361,
+        poke_simple:362,
+        poke_simple:363,
+        poke_simple:364,
+        poke_simple:365,
+        poke_simple:378,
+        poke_simple:471,
+        poke_simple:582,
+        poke_simple:583,
+        poke_simple:584,
+        poke_simple:712,
+        poke_simple:713,
+        poke_simple:86,
+        poke_simple:87 .
+
+ability:Illuminate a ex:Ability ;
+    ex:abilityName "Illuminate"^^xsd:string ;
+    ex:pokemonCount "8"^^xsd:int ;
+    ex:possessedBy poke_simple:120,
+        poke_simple:121,
+        poke_simple:170,
+        poke_simple:171,
+        poke_simple:313,
+        poke_simple:505,
+        poke_simple:755,
+        poke_simple:756 .
+
+ability:Illusion a ex:Ability ;
+    ex:abilityName "Illusion"^^xsd:string ;
+    ex:pokemonCount "2"^^xsd:int ;
+    ex:possessedBy poke_simple:570,
+        poke_simple:571 .
+
+ability:Immunity a ex:Ability ;
+    ex:abilityName "Immunity"^^xsd:string ;
+    ex:pokemonCount "3"^^xsd:int ;
+    ex:possessedBy poke_simple:143,
+        poke_simple:207,
+        poke_simple:335 .
+
+ability:Imposter a ex:Ability ;
+    ex:abilityName "Imposter"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:132 .
+
+ability:Infiltrator a ex:Ability ;
+    ex:abilityName "Infiltrator"^^xsd:string ;
+    ex:pokemonCount "20"^^xsd:int ;
+    ex:possessedBy poke_simple:169,
+        poke_simple:187,
+        poke_simple:188,
+        poke_simple:189,
+        poke_simple:291,
+        poke_simple:336,
+        poke_simple:41,
+        poke_simple:42,
+        poke_simple:442,
+        poke_simple:546,
+        poke_simple:547,
+        poke_simple:607,
+        poke_simple:608,
+        poke_simple:609,
+        poke_simple:677,
+        poke_simple:678,
+        poke_simple:686,
+        poke_simple:687,
+        poke_simple:714,
+        poke_simple:715 .
+
+ability:Innards_Out a ex:Ability ;
+    ex:abilityName "Innards Out"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:771 .
+
+ability:Inner_Focus a ex:Ability ;
+    ex:abilityName "Inner Focus"^^xsd:string ;
+    ex:pokemonCount "32"^^xsd:int ;
+    ex:possessedBy poke_simple:107,
+        poke_simple:115,
+        poke_simple:149,
+        poke_simple:169,
+        poke_simple:197,
+        poke_simple:203,
+        poke_simple:215,
+        poke_simple:243,
+        poke_simple:244,
+        poke_simple:245,
+        poke_simple:361,
+        poke_simple:362,
+        poke_simple:41,
+        poke_simple:42,
+        poke_simple:447,
+        poke_simple:448,
+        poke_simple:538,
+        poke_simple:539,
+        poke_simple:554,
+        poke_simple:619,
+        poke_simple:620,
+        poke_simple:624,
+        poke_simple:625,
+        poke_simple:63,
+        poke_simple:64,
+        poke_simple:65,
+        poke_simple:749,
+        poke_simple:750,
+        poke_simple:765,
+        poke_simple:83,
+        poke_simple:96,
+        poke_simple:97 .
+
+ability:Insomnia a ex:Ability ;
+    ex:abilityName "Insomnia"^^xsd:string ;
+    ex:pokemonCount "13"^^xsd:int ;
+    ex:possessedBy poke_simple:163,
+        poke_simple:164,
+        poke_simple:167,
+        poke_simple:168,
+        poke_simple:198,
+        poke_simple:225,
+        poke_simple:353,
+        poke_simple:354,
+        poke_simple:430,
+        poke_simple:710,
+        poke_simple:711,
+        poke_simple:96,
+        poke_simple:97 .
+
+ability:Intimidate a ex:Ability ;
+    ex:abilityName "Intimidate"^^xsd:string ;
+    ex:pokemonCount "31"^^xsd:int ;
+    ex:possessedBy poke_simple:128,
+        poke_simple:130,
+        poke_simple:209,
+        poke_simple:210,
+        poke_simple:211,
+        poke_simple:23,
+        poke_simple:234,
+        poke_simple:237,
+        poke_simple:24,
+        poke_simple:262,
+        poke_simple:284,
+        poke_simple:303,
+        poke_simple:373,
+        poke_simple:397,
+        poke_simple:398,
+        poke_simple:403,
+        poke_simple:404,
+        poke_simple:405,
+        poke_simple:507,
+        poke_simple:508,
+        poke_simple:551,
+        poke_simple:552,
+        poke_simple:553,
+        poke_simple:559,
+        poke_simple:560,
+        poke_simple:58,
+        poke_simple:59,
+        poke_simple:645,
+        poke_simple:725,
+        poke_simple:726,
+        poke_simple:727 .
+
+ability:Iron_Barbs a ex:Ability ;
+    ex:abilityName "Iron Barbs"^^xsd:string ;
+    ex:pokemonCount "3"^^xsd:int ;
+    ex:possessedBy poke_simple:597,
+        poke_simple:598,
+        poke_simple:777 .
+
+ability:Iron_Fist a ex:Ability ;
+    ex:abilityName "Iron Fist"^^xsd:string ;
+    ex:pokemonCount "14"^^xsd:int ;
+    ex:possessedBy poke_simple:107,
+        poke_simple:166,
+        poke_simple:390,
+        poke_simple:391,
+        poke_simple:392,
+        poke_simple:532,
+        poke_simple:533,
+        poke_simple:534,
+        poke_simple:622,
+        poke_simple:623,
+        poke_simple:674,
+        poke_simple:675,
+        poke_simple:739,
+        poke_simple:740 .
+
+ability:Justified a ex:Ability ;
+    ex:abilityName "Justified"^^xsd:string ;
+    ex:pokemonCount "9"^^xsd:int ;
+    ex:possessedBy poke_simple:359,
+        poke_simple:448,
+        poke_simple:475,
+        poke_simple:58,
+        poke_simple:59,
+        poke_simple:638,
+        poke_simple:639,
+        poke_simple:640,
+        poke_simple:647 .
+
+ability:Keen_Eye a ex:Ability ;
+    ex:abilityName "Keen Eye"^^xsd:string ;
+    ex:pokemonCount "37"^^xsd:int ;
+    ex:possessedBy poke_simple:107,
+        poke_simple:16,
+        poke_simple:161,
+        poke_simple:162,
+        poke_simple:163,
+        poke_simple:164,
+        poke_simple:17,
+        poke_simple:18,
+        poke_simple:21,
+        poke_simple:215,
+        poke_simple:22,
+        poke_simple:227,
+        poke_simple:278,
+        poke_simple:279,
+        poke_simple:302,
+        poke_simple:396,
+        poke_simple:431,
+        poke_simple:434,
+        poke_simple:435,
+        poke_simple:441,
+        poke_simple:451,
+        poke_simple:452,
+        poke_simple:504,
+        poke_simple:505,
+        poke_simple:580,
+        poke_simple:581,
+        poke_simple:627,
+        poke_simple:628,
+        poke_simple:677,
+        poke_simple:678,
+        poke_simple:731,
+        poke_simple:732,
+        poke_simple:733,
+        poke_simple:744,
+        poke_simple:745,
+        poke_simple:83 .
+
+ability:Klutz a ex:Ability ;
+    ex:abilityName "Klutz"^^xsd:string ;
+    ex:pokemonCount "9"^^xsd:int ;
+    ex:possessedBy poke_simple:427,
+        poke_simple:428,
+        poke_simple:527,
+        poke_simple:528,
+        poke_simple:531,
+        poke_simple:622,
+        poke_simple:623,
+        poke_simple:759,
+        poke_simple:760 .
+
+ability:Leaf_Guard a ex:Ability ;
+    ex:abilityName "Leaf Guard"^^xsd:string ;
+    ex:pokemonCount "19"^^xsd:int ;
+    ex:possessedBy poke_simple:114,
+        poke_simple:152,
+        poke_simple:153,
+        poke_simple:154,
+        poke_simple:187,
+        poke_simple:188,
+        poke_simple:189,
+        poke_simple:315,
+        poke_simple:406,
+        poke_simple:465,
+        poke_simple:470,
+        poke_simple:541,
+        poke_simple:548,
+        poke_simple:549,
+        poke_simple:753,
+        poke_simple:754,
+        poke_simple:761,
+        poke_simple:762,
+        poke_simple:763 .
+
+ability:Levitate a ex:Ability ;
+    ex:abilityName "Levitate"^^xsd:string ;
+    ex:pokemonCount "33"^^xsd:int ;
+    ex:possessedBy poke_simple:109,
+        poke_simple:110,
+        poke_simple:200,
+        poke_simple:201,
+        poke_simple:329,
+        poke_simple:330,
+        poke_simple:337,
+        poke_simple:338,
+        poke_simple:343,
+        poke_simple:344,
+        poke_simple:355,
+        poke_simple:358,
+        poke_simple:380,
+        poke_simple:381,
+        poke_simple:429,
+        poke_simple:433,
+        poke_simple:436,
+        poke_simple:437,
+        poke_simple:455,
+        poke_simple:479,
+        poke_simple:480,
+        poke_simple:481,
+        poke_simple:482,
+        poke_simple:487,
+        poke_simple:488,
+        poke_simple:602,
+        poke_simple:603,
+        poke_simple:604,
+        poke_simple:615,
+        poke_simple:635,
+        poke_simple:738,
+        poke_simple:92,
+        poke_simple:93 .
+
+ability:Light_Metal a ex:Ability ;
+    ex:abilityName "Light Metal"^^xsd:string ;
+    ex:pokemonCount "5"^^xsd:int ;
+    ex:possessedBy poke_simple:212,
+        poke_simple:374,
+        poke_simple:375,
+        poke_simple:376,
+        poke_simple:379 .
+
+ability:Lightningrod a ex:Ability ;
+    ex:abilityName "Lightningrod"^^xsd:string ;
+    ex:pokemonCount "17"^^xsd:int ;
+    ex:possessedBy poke_simple:104,
+        poke_simple:105,
+        poke_simple:111,
+        poke_simple:112,
+        poke_simple:118,
+        poke_simple:119,
+        poke_simple:172,
+        poke_simple:25,
+        poke_simple:26,
+        poke_simple:309,
+        poke_simple:310,
+        poke_simple:311,
+        poke_simple:464,
+        poke_simple:522,
+        poke_simple:523,
+        poke_simple:777 .
+
+ability:Limber a ex:Ability ;
+    ex:abilityName "Limber"^^xsd:string ;
+    ex:pokemonCount "12"^^xsd:int ;
+    ex:possessedBy poke_simple:106,
+        poke_simple:132,
+        poke_simple:427,
+        poke_simple:428,
+        poke_simple:431,
+        poke_simple:509,
+        poke_simple:510,
+        poke_simple:53,
+        poke_simple:618,
+        poke_simple:701,
+        poke_simple:747,
+        poke_simple:748 .
+
+ability:Liquid_Ooze a ex:Ability ;
+    ex:abilityName "Liquid Ooze"^^xsd:string ;
+    ex:pokemonCount "4"^^xsd:int ;
+    ex:possessedBy poke_simple:316,
+        poke_simple:317,
+        poke_simple:72,
+        poke_simple:73 .
+
+ability:Liquid_Voice a ex:Ability ;
+    ex:abilityName "Liquid Voice"^^xsd:string ;
+    ex:pokemonCount "3"^^xsd:int ;
+    ex:possessedBy poke_simple:728,
+        poke_simple:729,
+        poke_simple:730 .
+
+ability:Long_Reach a ex:Ability ;
+    ex:abilityName "Long Reach"^^xsd:string ;
+    ex:pokemonCount "3"^^xsd:int ;
+    ex:possessedBy poke_simple:722,
+        poke_simple:723,
+        poke_simple:724 .
+
+ability:Magic_Bounce a ex:Ability ;
+    ex:abilityName "Magic Bounce"^^xsd:string ;
+    ex:pokemonCount "3"^^xsd:int ;
+    ex:possessedBy poke_simple:177,
+        poke_simple:178,
+        poke_simple:196 .
+
+ability:Magic_Guard a ex:Ability ;
+    ex:abilityName "Magic Guard"^^xsd:string ;
+    ex:pokemonCount "10"^^xsd:int ;
+    ex:possessedBy poke_simple:173,
+        poke_simple:35,
+        poke_simple:36,
+        poke_simple:561,
+        poke_simple:577,
+        poke_simple:578,
+        poke_simple:579,
+        poke_simple:63,
+        poke_simple:64,
+        poke_simple:65 .
+
+ability:Magician a ex:Ability ;
+    ex:abilityName "Magician"^^xsd:string ;
+    ex:pokemonCount "5"^^xsd:int ;
+    ex:possessedBy poke_simple:653,
+        poke_simple:654,
+        poke_simple:655,
+        poke_simple:707,
+        poke_simple:720 .
+
+ability:Magma_Armor a ex:Ability ;
+    ex:abilityName "Magma Armor"^^xsd:string ;
+    ex:pokemonCount "3"^^xsd:int ;
+    ex:possessedBy poke_simple:218,
+        poke_simple:219,
+        poke_simple:323 .
+
+ability:Magnet_Pull a ex:Ability ;
+    ex:abilityName "Magnet Pull"^^xsd:string ;
+    ex:pokemonCount "8"^^xsd:int ;
+    ex:possessedBy poke_simple:299,
+        poke_simple:462,
+        poke_simple:476,
+        poke_simple:74,
+        poke_simple:75,
+        poke_simple:76,
+        poke_simple:81,
+        poke_simple:82 .
+
+ability:Marvel_Scale a ex:Ability ;
+    ex:abilityName "Marvel Scale"^^xsd:string ;
+    ex:pokemonCount "3"^^xsd:int ;
+    ex:possessedBy poke_simple:147,
+        poke_simple:148,
+        poke_simple:350 .
+
+ability:Mega_Launcher a ex:Ability ;
+    ex:abilityName "Mega Launcher"^^xsd:string ;
+    ex:pokemonCount "2"^^xsd:int ;
+    ex:possessedBy poke_simple:692,
+        poke_simple:693 .
+
+ability:Merciless a ex:Ability ;
+    ex:abilityName "Merciless"^^xsd:string ;
+    ex:pokemonCount "2"^^xsd:int ;
+    ex:possessedBy poke_simple:747,
+        poke_simple:748 .
+
+ability:Minus a ex:Ability ;
+    ex:abilityName "Minus"^^xsd:string ;
+    ex:pokemonCount "6"^^xsd:int ;
+    ex:possessedBy poke_simple:309,
+        poke_simple:310,
+        poke_simple:312,
+        poke_simple:599,
+        poke_simple:600,
+        poke_simple:601 .
+
+ability:Misty_Surge a ex:Ability ;
+    ex:abilityName "Misty Surge"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:788 .
+
+ability:Mold_Breaker a ex:Ability ;
+    ex:abilityName "Mold Breaker"^^xsd:string ;
+    ex:pokemonCount "15"^^xsd:int ;
+    ex:possessedBy poke_simple:127,
+        poke_simple:408,
+        poke_simple:409,
+        poke_simple:529,
+        poke_simple:530,
+        poke_simple:538,
+        poke_simple:539,
+        poke_simple:550,
+        poke_simple:610,
+        poke_simple:611,
+        poke_simple:612,
+        poke_simple:621,
+        poke_simple:674,
+        poke_simple:675,
+        poke_simple:701 .
+
+ability:Moody a ex:Ability ;
+    ex:abilityName "Moody"^^xsd:string ;
+    ex:pokemonCount "7"^^xsd:int ;
+    ex:possessedBy poke_simple:223,
+        poke_simple:224,
+        poke_simple:235,
+        poke_simple:361,
+        poke_simple:362,
+        poke_simple:399,
+        poke_simple:400 .
+
+ability:Motor_Drive a ex:Ability ;
+    ex:abilityName "Motor Drive"^^xsd:string ;
+    ex:pokemonCount "4"^^xsd:int ;
+    ex:possessedBy poke_simple:466,
+        poke_simple:522,
+        poke_simple:523,
+        poke_simple:587 .
+
+ability:Moxie a ex:Ability ;
+    ex:abilityName "Moxie"^^xsd:string ;
+    ex:pokemonCount "13"^^xsd:int ;
+    ex:possessedBy poke_simple:127,
+        poke_simple:130,
+        poke_simple:214,
+        poke_simple:262,
+        poke_simple:373,
+        poke_simple:430,
+        poke_simple:551,
+        poke_simple:552,
+        poke_simple:553,
+        poke_simple:559,
+        poke_simple:560,
+        poke_simple:667,
+        poke_simple:668 .
+
+ability:Multiscale a ex:Ability ;
+    ex:abilityName "Multiscale"^^xsd:string ;
+    ex:pokemonCount "2"^^xsd:int ;
+    ex:possessedBy poke_simple:149,
+        poke_simple:249 .
+
+ability:Multitype a ex:Ability ;
+    ex:abilityName "Multitype"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:493 .
+
+ability:Mummy a ex:Ability ;
+    ex:abilityName "Mummy"^^xsd:string ;
+    ex:pokemonCount "2"^^xsd:int ;
+    ex:possessedBy poke_simple:562,
+        poke_simple:563 .
+
+ability:Natural_Cure a ex:Ability ;
+    ex:abilityName "Natural Cure"^^xsd:string ;
+    ex:pokemonCount "16"^^xsd:int ;
+    ex:possessedBy poke_simple:113,
+        poke_simple:120,
+        poke_simple:121,
+        poke_simple:222,
+        poke_simple:242,
+        poke_simple:251,
+        poke_simple:315,
+        poke_simple:333,
+        poke_simple:334,
+        poke_simple:406,
+        poke_simple:407,
+        poke_simple:440,
+        poke_simple:492,
+        poke_simple:708,
+        poke_simple:709,
+        poke_simple:764 .
+
+ability:No_Guard a ex:Ability ;
+    ex:abilityName "No Guard"^^xsd:string ;
+    ex:pokemonCount "9"^^xsd:int ;
+    ex:possessedBy poke_simple:588,
+        poke_simple:622,
+        poke_simple:623,
+        poke_simple:66,
+        poke_simple:67,
+        poke_simple:679,
+        poke_simple:68,
+        poke_simple:680,
+        poke_simple:745 .
+
+ability:Normalize a ex:Ability ;
+    ex:abilityName "Normalize"^^xsd:string ;
+    ex:pokemonCount "2"^^xsd:int ;
+    ex:possessedBy poke_simple:300,
+        poke_simple:301 .
+
+ability:Oblivious a ex:Ability ;
+    ex:abilityName "Oblivious"^^xsd:string ;
+    ex:pokemonCount "24"^^xsd:int ;
+    ex:possessedBy poke_simple:108,
+        poke_simple:124,
+        poke_simple:199,
+        poke_simple:220,
+        poke_simple:221,
+        poke_simple:238,
+        poke_simple:314,
+        poke_simple:320,
+        poke_simple:321,
+        poke_simple:322,
+        poke_simple:339,
+        poke_simple:340,
+        poke_simple:349,
+        poke_simple:363,
+        poke_simple:364,
+        poke_simple:365,
+        poke_simple:463,
+        poke_simple:473,
+        poke_simple:757,
+        poke_simple:758,
+        poke_simple:761,
+        poke_simple:762,
+        poke_simple:79,
+        poke_simple:80 .
+
+ability:Overcoat a ex:Ability ;
+    ex:abilityName "Overcoat"^^xsd:string ;
+    ex:pokemonCount "20"^^xsd:int ;
+    ex:possessedBy poke_simple:204,
+        poke_simple:205,
+        poke_simple:372,
+        poke_simple:412,
+        poke_simple:413,
+        poke_simple:540,
+        poke_simple:541,
+        poke_simple:542,
+        poke_simple:577,
+        poke_simple:578,
+        poke_simple:579,
+        poke_simple:589,
+        poke_simple:616,
+        poke_simple:629,
+        poke_simple:630,
+        poke_simple:782,
+        poke_simple:783,
+        poke_simple:784,
+        poke_simple:90,
+        poke_simple:91 .
+
+ability:Overgrow a ex:Ability ;
+    ex:abilityName "Overgrow"^^xsd:string ;
+    ex:pokemonCount "23"^^xsd:int ;
+    ex:possessedBy poke_simple:1,
+        poke_simple:152,
+        poke_simple:153,
+        poke_simple:154,
+        poke_simple:2,
+        poke_simple:252,
+        poke_simple:253,
+        poke_simple:254,
+        poke_simple:3,
+        poke_simple:387,
+        poke_simple:388,
+        poke_simple:389,
+        poke_simple:495,
+        poke_simple:496,
+        poke_simple:497,
+        poke_simple:511,
+        poke_simple:512,
+        poke_simple:650,
+        poke_simple:651,
+        poke_simple:652,
+        poke_simple:722,
+        poke_simple:723,
+        poke_simple:724 .
+
+ability:Own_Tempo a ex:Ability ;
+    ex:abilityName "Own Tempo"^^xsd:string ;
+    ex:pokemonCount "22"^^xsd:int ;
+    ex:possessedBy poke_simple:108,
+        poke_simple:199,
+        poke_simple:235,
+        poke_simple:270,
+        poke_simple:271,
+        poke_simple:272,
+        poke_simple:322,
+        poke_simple:325,
+        poke_simple:326,
+        poke_simple:327,
+        poke_simple:431,
+        poke_simple:432,
+        poke_simple:463,
+        poke_simple:548,
+        poke_simple:549,
+        poke_simple:677,
+        poke_simple:712,
+        poke_simple:713,
+        poke_simple:749,
+        poke_simple:750,
+        poke_simple:79,
+        poke_simple:80 .
+
+ability:Pickpocket a ex:Ability ;
+    ex:abilityName "Pickpocket"^^xsd:string ;
+    ex:pokemonCount "7"^^xsd:int ;
+    ex:possessedBy poke_simple:215,
+        poke_simple:273,
+        poke_simple:274,
+        poke_simple:275,
+        poke_simple:461,
+        poke_simple:688,
+        poke_simple:689 .
+
+ability:Pickup a ex:Ability ;
+    ex:abilityName "Pickup"^^xsd:string ;
+    ex:pokemonCount "18"^^xsd:int ;
+    ex:possessedBy poke_simple:190,
+        poke_simple:216,
+        poke_simple:231,
+        poke_simple:263,
+        poke_simple:264,
+        poke_simple:417,
+        poke_simple:424,
+        poke_simple:446,
+        poke_simple:506,
+        poke_simple:52,
+        poke_simple:659,
+        poke_simple:660,
+        poke_simple:702,
+        poke_simple:710,
+        poke_simple:711,
+        poke_simple:731,
+        poke_simple:732 .
+
+ability:Pixilate a ex:Ability ;
+    ex:abilityName "Pixilate"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:700 .
+
+ability:Plus a ex:Ability ;
+    ex:abilityName "Plus"^^xsd:string ;
+    ex:pokemonCount "8"^^xsd:int ;
+    ex:possessedBy poke_simple:179,
+        poke_simple:180,
+        poke_simple:181,
+        poke_simple:311,
+        poke_simple:599,
+        poke_simple:600,
+        poke_simple:601,
+        poke_simple:702 .
+
+ability:Poison_Heal a ex:Ability ;
+    ex:abilityName "Poison Heal"^^xsd:string ;
+    ex:pokemonCount "3"^^xsd:int ;
+    ex:possessedBy poke_simple:285,
+        poke_simple:286,
+        poke_simple:472 .
+
+ability:Poison_Point a ex:Ability ;
+    ex:abilityName "Poison Point"^^xsd:string ;
+    ex:pokemonCount "16"^^xsd:int ;
+    ex:possessedBy poke_simple:117,
+        poke_simple:211,
+        poke_simple:29,
+        poke_simple:30,
+        poke_simple:31,
+        poke_simple:315,
+        poke_simple:32,
+        poke_simple:33,
+        poke_simple:34,
+        poke_simple:406,
+        poke_simple:407,
+        poke_simple:543,
+        poke_simple:544,
+        poke_simple:545,
+        poke_simple:690,
+        poke_simple:691 .
+
+ability:Poison_Touch a ex:Ability ;
+    ex:abilityName "Poison Touch"^^xsd:string ;
+    ex:pokemonCount "9"^^xsd:int ;
+    ex:possessedBy poke_simple:453,
+        poke_simple:454,
+        poke_simple:537,
+        poke_simple:690,
+        poke_simple:691,
+        poke_simple:88,
+        poke_simple:89 .
+
+ability:Power_Construct a ex:Ability ;
+    ex:abilityName "Power Construct"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:718 .
+
+ability:Power_of_Alchemy a ex:Ability ;
+    ex:abilityName "Power of Alchemy"^^xsd:string ;
+    ex:pokemonCount "2"^^xsd:int ;
+    ex:possessedBy poke_simple:88,
+        poke_simple:89 .
+
+ability:Prankster a ex:Ability ;
+    ex:abilityName "Prankster"^^xsd:string ;
+    ex:pokemonCount "13"^^xsd:int ;
+    ex:possessedBy poke_simple:198,
+        poke_simple:302,
+        poke_simple:313,
+        poke_simple:314,
+        poke_simple:447,
+        poke_simple:509,
+        poke_simple:510,
+        poke_simple:546,
+        poke_simple:547,
+        poke_simple:641,
+        poke_simple:642,
+        poke_simple:678,
+        poke_simple:707 .
+
+ability:Pressure a ex:Ability ;
+    ex:abilityName "Pressure"^^xsd:string ;
+    ex:pokemonCount "25"^^xsd:int ;
+    ex:possessedBy poke_simple:142,
+        poke_simple:144,
+        poke_simple:145,
+        poke_simple:146,
+        poke_simple:150,
+        poke_simple:243,
+        poke_simple:244,
+        poke_simple:245,
+        poke_simple:249,
+        poke_simple:250,
+        poke_simple:320,
+        poke_simple:321,
+        poke_simple:356,
+        poke_simple:359,
+        poke_simple:386,
+        poke_simple:416,
+        poke_simple:442,
+        poke_simple:461,
+        poke_simple:477,
+        poke_simple:483,
+        poke_simple:484,
+        poke_simple:487,
+        poke_simple:624,
+        poke_simple:625,
+        poke_simple:646 .
+
+ability:Prism_Armor a ex:Ability ;
+    ex:abilityName "Prism Armor"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:800 .
+
+ability:Protean a ex:Ability ;
+    ex:abilityName "Protean"^^xsd:string ;
+    ex:pokemonCount "4"^^xsd:int ;
+    ex:possessedBy poke_simple:352,
+        poke_simple:656,
+        poke_simple:657,
+        poke_simple:658 .
+
+ability:Psychic_Surge a ex:Ability ;
+    ex:abilityName "Psychic Surge"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:786 .
+
+ability:Pure_Power a ex:Ability ;
+    ex:abilityName "Pure Power"^^xsd:string ;
+    ex:pokemonCount "2"^^xsd:int ;
+    ex:possessedBy poke_simple:307,
+        poke_simple:308 .
+
+ability:Queenly_Majesty a ex:Ability ;
+    ex:abilityName "Queenly Majesty"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:763 .
+
+ability:Quick_Feet a ex:Ability ;
+    ex:abilityName "Quick Feet"^^xsd:string ;
+    ex:pokemonCount "9"^^xsd:int ;
+    ex:possessedBy poke_simple:135,
+        poke_simple:210,
+        poke_simple:216,
+        poke_simple:217,
+        poke_simple:261,
+        poke_simple:262,
+        poke_simple:263,
+        poke_simple:264,
+        poke_simple:285 .
+
+ability:RKS_System a ex:Ability ;
+    ex:abilityName "RKS System"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:773 .
+
+ability:Rain_Dish a ex:Ability ;
+    ex:abilityName "Rain Dish"^^xsd:string ;
+    ex:pokemonCount "13"^^xsd:int ;
+    ex:possessedBy poke_simple:270,
+        poke_simple:271,
+        poke_simple:272,
+        poke_simple:278,
+        poke_simple:279,
+        poke_simple:283,
+        poke_simple:7,
+        poke_simple:72,
+        poke_simple:73,
+        poke_simple:755,
+        poke_simple:756,
+        poke_simple:8,
+        poke_simple:9 .
+
+ability:Rattled a ex:Ability ;
+    ex:abilityName "Rattled"^^xsd:string ;
+    ex:pokemonCount "13"^^xsd:int ;
+    ex:possessedBy poke_simple:129,
+        poke_simple:165,
+        poke_simple:185,
+        poke_simple:206,
+        poke_simple:209,
+        poke_simple:210,
+        poke_simple:261,
+        poke_simple:293,
+        poke_simple:366,
+        poke_simple:438,
+        poke_simple:52,
+        poke_simple:53,
+        poke_simple:613 .
+
+ability:Receiver a ex:Ability ;
+    ex:abilityName "Receiver"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:766 .
+
+ability:Reckless a ex:Ability ;
+    ex:abilityName "Reckless"^^xsd:string ;
+    ex:pokemonCount "12"^^xsd:int ;
+    ex:possessedBy poke_simple:106,
+        poke_simple:111,
+        poke_simple:112,
+        poke_simple:396,
+        poke_simple:397,
+        poke_simple:398,
+        poke_simple:464,
+        poke_simple:500,
+        poke_simple:550,
+        poke_simple:619,
+        poke_simple:620,
+        poke_simple:626 .
+
+ability:Refrigerate a ex:Ability ;
+    ex:abilityName "Refrigerate"^^xsd:string ;
+    ex:pokemonCount "2"^^xsd:int ;
+    ex:possessedBy poke_simple:698,
+        poke_simple:699 .
+
+ability:Regenerator a ex:Ability ;
+    ex:abilityName "Regenerator"^^xsd:string ;
+    ex:pokemonCount "19"^^xsd:int ;
+    ex:possessedBy poke_simple:114,
+        poke_simple:199,
+        poke_simple:222,
+        poke_simple:250,
+        poke_simple:465,
+        poke_simple:531,
+        poke_simple:577,
+        poke_simple:578,
+        poke_simple:579,
+        poke_simple:590,
+        poke_simple:591,
+        poke_simple:594,
+        poke_simple:619,
+        poke_simple:620,
+        poke_simple:641,
+        poke_simple:747,
+        poke_simple:748,
+        poke_simple:79,
+        poke_simple:80 .
+
+ability:Rivalry a ex:Ability ;
+    ex:abilityName "Rivalry"^^xsd:string ;
+    ex:pokemonCount "18"^^xsd:int ;
+    ex:possessedBy poke_simple:267,
+        poke_simple:29,
+        poke_simple:30,
+        poke_simple:31,
+        poke_simple:32,
+        poke_simple:33,
+        poke_simple:34,
+        poke_simple:403,
+        poke_simple:404,
+        poke_simple:405,
+        poke_simple:519,
+        poke_simple:520,
+        poke_simple:521,
+        poke_simple:610,
+        poke_simple:611,
+        poke_simple:612,
+        poke_simple:667,
+        poke_simple:668 .
+
+ability:Rock_Head a ex:Ability ;
+    ex:abilityName "Rock Head"^^xsd:string ;
+    ex:pokemonCount "21"^^xsd:int ;
+    ex:possessedBy poke_simple:104,
+        poke_simple:105,
+        poke_simple:111,
+        poke_simple:112,
+        poke_simple:142,
+        poke_simple:185,
+        poke_simple:208,
+        poke_simple:304,
+        poke_simple:305,
+        poke_simple:306,
+        poke_simple:369,
+        poke_simple:371,
+        poke_simple:372,
+        poke_simple:438,
+        poke_simple:550,
+        poke_simple:697,
+        poke_simple:74,
+        poke_simple:75,
+        poke_simple:76,
+        poke_simple:95 .
+
+ability:Rough_Skin a ex:Ability ;
+    ex:abilityName "Rough Skin"^^xsd:string ;
+    ex:pokemonCount "6"^^xsd:int ;
+    ex:possessedBy poke_simple:318,
+        poke_simple:319,
+        poke_simple:443,
+        poke_simple:444,
+        poke_simple:445,
+        poke_simple:621 .
+
+ability:Run_Away a ex:Ability ;
+    ex:abilityName "Run Away"^^xsd:string ;
+    ex:pokemonCount "24"^^xsd:int ;
+    ex:possessedBy poke_simple:10,
+        poke_simple:13,
+        poke_simple:133,
+        poke_simple:161,
+        poke_simple:162,
+        poke_simple:19,
+        poke_simple:190,
+        poke_simple:20,
+        poke_simple:206,
+        poke_simple:209,
+        poke_simple:261,
+        poke_simple:265,
+        poke_simple:290,
+        poke_simple:401,
+        poke_simple:417,
+        poke_simple:427,
+        poke_simple:43,
+        poke_simple:48,
+        poke_simple:504,
+        poke_simple:506,
+        poke_simple:77,
+        poke_simple:78,
+        poke_simple:84,
+        poke_simple:85 .
+
+ability:Sand_Force a ex:Ability ;
+    ex:abilityName "Sand Force"^^xsd:string ;
+    ex:pokemonCount "16"^^xsd:int ;
+    ex:possessedBy poke_simple:299,
+        poke_simple:422,
+        poke_simple:423,
+        poke_simple:449,
+        poke_simple:450,
+        poke_simple:476,
+        poke_simple:50,
+        poke_simple:51,
+        poke_simple:524,
+        poke_simple:525,
+        poke_simple:526,
+        poke_simple:529,
+        poke_simple:530,
+        poke_simple:645 .
+
+ability:Sand_Rush a ex:Ability ;
+    ex:abilityName "Sand Rush"^^xsd:string ;
+    ex:pokemonCount "7"^^xsd:int ;
+    ex:possessedBy poke_simple:27,
+        poke_simple:28,
+        poke_simple:507,
+        poke_simple:508,
+        poke_simple:529,
+        poke_simple:530,
+        poke_simple:745 .
+
+ability:Sand_Stream a ex:Ability ;
+    ex:abilityName "Sand Stream"^^xsd:string ;
+    ex:pokemonCount "4"^^xsd:int ;
+    ex:possessedBy poke_simple:248,
+        poke_simple:449,
+        poke_simple:450,
+        poke_simple:526 .
+
+ability:Sand_Veil a ex:Ability ;
+    ex:abilityName "Sand Veil"^^xsd:string ;
+    ex:pokemonCount "24"^^xsd:int ;
+    ex:possessedBy poke_simple:207,
+        poke_simple:231,
+        poke_simple:232,
+        poke_simple:246,
+        poke_simple:27,
+        poke_simple:28,
+        poke_simple:331,
+        poke_simple:332,
+        poke_simple:443,
+        poke_simple:444,
+        poke_simple:445,
+        poke_simple:472,
+        poke_simple:50,
+        poke_simple:51,
+        poke_simple:618,
+        poke_simple:694,
+        poke_simple:695,
+        poke_simple:74,
+        poke_simple:75,
+        poke_simple:76,
+        poke_simple:769,
+        poke_simple:770 .
+
+ability:Sap_Sipper a ex:Ability ;
+    ex:abilityName "Sap Sipper"^^xsd:string ;
+    ex:pokemonCount "17"^^xsd:int ;
+    ex:possessedBy poke_simple:183,
+        poke_simple:184,
+        poke_simple:203,
+        poke_simple:234,
+        poke_simple:241,
+        poke_simple:298,
+        poke_simple:522,
+        poke_simple:523,
+        poke_simple:585,
+        poke_simple:586,
+        poke_simple:626,
+        poke_simple:672,
+        poke_simple:673,
+        poke_simple:704,
+        poke_simple:705,
+        poke_simple:706,
+        poke_simple:780 .
+
+ability:Schooling a ex:Ability ;
+    ex:abilityName "Schooling"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:746 .
+
+ability:Scrappy a ex:Ability ;
+    ex:abilityName "Scrappy"^^xsd:string ;
+    ex:pokemonCount "10"^^xsd:int ;
+    ex:possessedBy poke_simple:115,
+        poke_simple:241,
+        poke_simple:276,
+        poke_simple:277,
+        poke_simple:294,
+        poke_simple:295,
+        poke_simple:507,
+        poke_simple:508,
+        poke_simple:674,
+        poke_simple:675 .
+
+ability:Serene_Grace a ex:Ability ;
+    ex:abilityName "Serene Grace"^^xsd:string ;
+    ex:pokemonCount "12"^^xsd:int ;
+    ex:possessedBy poke_simple:113,
+        poke_simple:175,
+        poke_simple:176,
+        poke_simple:206,
+        poke_simple:242,
+        poke_simple:385,
+        poke_simple:440,
+        poke_simple:468,
+        poke_simple:492,
+        poke_simple:585,
+        poke_simple:586,
+        poke_simple:648 .
+
+ability:Shadow_Shield a ex:Ability ;
+    ex:abilityName "Shadow Shield"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:792 .
+
+ability:Shadow_Tag a ex:Ability ;
+    ex:abilityName "Shadow Tag"^^xsd:string ;
+    ex:pokemonCount "5"^^xsd:int ;
+    ex:possessedBy poke_simple:202,
+        poke_simple:360,
+        poke_simple:574,
+        poke_simple:575,
+        poke_simple:576 .
+
+ability:Shed_Skin a ex:Ability ;
+    ex:abilityName "Shed Skin"^^xsd:string ;
+    ex:pokemonCount "16"^^xsd:int ;
+    ex:possessedBy poke_simple:11,
+        poke_simple:14,
+        poke_simple:147,
+        poke_simple:148,
+        poke_simple:23,
+        poke_simple:24,
+        poke_simple:247,
+        poke_simple:266,
+        poke_simple:268,
+        poke_simple:336,
+        poke_simple:401,
+        poke_simple:412,
+        poke_simple:559,
+        poke_simple:560,
+        poke_simple:588,
+        poke_simple:665 .
+
+ability:Sheer_Force a ex:Ability ;
+    ex:abilityName "Sheer Force"^^xsd:string ;
+    ex:pokemonCount "25"^^xsd:int ;
+    ex:possessedBy poke_simple:128,
+        poke_simple:158,
+        poke_simple:159,
+        poke_simple:160,
+        poke_simple:208,
+        poke_simple:296,
+        poke_simple:297,
+        poke_simple:303,
+        poke_simple:31,
+        poke_simple:328,
+        poke_simple:34,
+        poke_simple:371,
+        poke_simple:408,
+        poke_simple:409,
+        poke_simple:532,
+        poke_simple:533,
+        poke_simple:534,
+        poke_simple:555,
+        poke_simple:621,
+        poke_simple:627,
+        poke_simple:628,
+        poke_simple:645,
+        poke_simple:733,
+        poke_simple:98,
+        poke_simple:99 .
+
+ability:Shell_Armor a ex:Ability ;
+    ex:abilityName "Shell Armor"^^xsd:string ;
+    ex:pokemonCount "22"^^xsd:int ;
+    ex:possessedBy poke_simple:131,
+        poke_simple:138,
+        poke_simple:139,
+        poke_simple:324,
+        poke_simple:341,
+        poke_simple:342,
+        poke_simple:366,
+        poke_simple:387,
+        poke_simple:388,
+        poke_simple:389,
+        poke_simple:501,
+        poke_simple:502,
+        poke_simple:503,
+        poke_simple:557,
+        poke_simple:558,
+        poke_simple:589,
+        poke_simple:616,
+        poke_simple:776,
+        poke_simple:90,
+        poke_simple:91,
+        poke_simple:98,
+        poke_simple:99 .
+
+ability:Shield_Dust a ex:Ability ;
+    ex:abilityName "Shield Dust"^^xsd:string ;
+    ex:pokemonCount "9"^^xsd:int ;
+    ex:possessedBy poke_simple:10,
+        poke_simple:13,
+        poke_simple:265,
+        poke_simple:269,
+        poke_simple:49,
+        poke_simple:664,
+        poke_simple:666,
+        poke_simple:742,
+        poke_simple:743 .
+
+ability:Shields_Down a ex:Ability ;
+    ex:abilityName "Shields Down"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:774 .
+
+ability:Simple a ex:Ability ;
+    ex:abilityName "Simple"^^xsd:string ;
+    ex:pokemonCount "5"^^xsd:int ;
+    ex:possessedBy poke_simple:322,
+        poke_simple:399,
+        poke_simple:400,
+        poke_simple:527,
+        poke_simple:528 .
+
+ability:Skill_Link a ex:Ability ;
+    ex:abilityName "Skill Link"^^xsd:string ;
+    ex:pokemonCount "9"^^xsd:int ;
+    ex:possessedBy poke_simple:190,
+        poke_simple:424,
+        poke_simple:572,
+        poke_simple:573,
+        poke_simple:731,
+        poke_simple:732,
+        poke_simple:733,
+        poke_simple:90,
+        poke_simple:91 .
+
+ability:Slow_Start a ex:Ability ;
+    ex:abilityName "Slow Start"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:486 .
+
+ability:Slush_Rush a ex:Ability ;
+    ex:abilityName "Slush Rush"^^xsd:string ;
+    ex:pokemonCount "4"^^xsd:int ;
+    ex:possessedBy poke_simple:27,
+        poke_simple:28,
+        poke_simple:613,
+        poke_simple:614 .
+
+ability:Sniper a ex:Ability ;
+    ex:abilityName "Sniper"^^xsd:string ;
+    ex:pokemonCount "14"^^xsd:int ;
+    ex:possessedBy poke_simple:116,
+        poke_simple:117,
+        poke_simple:15,
+        poke_simple:167,
+        poke_simple:168,
+        poke_simple:21,
+        poke_simple:22,
+        poke_simple:223,
+        poke_simple:224,
+        poke_simple:230,
+        poke_simple:451,
+        poke_simple:452,
+        poke_simple:688,
+        poke_simple:689 .
+
+ability:Snow_Cloak a ex:Ability ;
+    ex:abilityName "Snow Cloak"^^xsd:string ;
+    ex:pokemonCount "14"^^xsd:int ;
+    ex:possessedBy poke_simple:144,
+        poke_simple:220,
+        poke_simple:221,
+        poke_simple:27,
+        poke_simple:28,
+        poke_simple:37,
+        poke_simple:38,
+        poke_simple:471,
+        poke_simple:473,
+        poke_simple:478,
+        poke_simple:582,
+        poke_simple:583,
+        poke_simple:613,
+        poke_simple:614 .
+
+ability:Snow_Warning a ex:Ability ;
+    ex:abilityName "Snow Warning"^^xsd:string ;
+    ex:pokemonCount "7"^^xsd:int ;
+    ex:possessedBy poke_simple:37,
+        poke_simple:38,
+        poke_simple:459,
+        poke_simple:460,
+        poke_simple:584,
+        poke_simple:698,
+        poke_simple:699 .
+
+ability:Solar_Power a ex:Ability ;
+    ex:abilityName "Solar Power"^^xsd:string ;
+    ex:pokemonCount "8"^^xsd:int ;
+    ex:possessedBy poke_simple:191,
+        poke_simple:192,
+        poke_simple:357,
+        poke_simple:4,
+        poke_simple:5,
+        poke_simple:6,
+        poke_simple:694,
+        poke_simple:695 .
+
+ability:Solid_Rock a ex:Ability ;
+    ex:abilityName "Solid Rock"^^xsd:string ;
+    ex:pokemonCount "4"^^xsd:int ;
+    ex:possessedBy poke_simple:323,
+        poke_simple:464,
+        poke_simple:564,
+        poke_simple:565 .
+
+ability:Soul-Heart a ex:Ability ;
+    ex:abilityName "Soul-Heart"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:801 .
+
+ability:Soundproof a ex:Ability ;
+    ex:abilityName "Soundproof"^^xsd:string ;
+    ex:pokemonCount "15"^^xsd:int ;
+    ex:possessedBy poke_simple:100,
+        poke_simple:101,
+        poke_simple:122,
+        poke_simple:293,
+        poke_simple:294,
+        poke_simple:295,
+        poke_simple:410,
+        poke_simple:411,
+        poke_simple:439,
+        poke_simple:459,
+        poke_simple:460,
+        poke_simple:626,
+        poke_simple:782,
+        poke_simple:783,
+        poke_simple:784 .
+
+ability:Speed_Boost a ex:Ability ;
+    ex:abilityName "Speed Boost"^^xsd:string ;
+    ex:pokemonCount "11"^^xsd:int ;
+    ex:possessedBy poke_simple:193,
+        poke_simple:255,
+        poke_simple:256,
+        poke_simple:257,
+        poke_simple:291,
+        poke_simple:318,
+        poke_simple:319,
+        poke_simple:469,
+        poke_simple:543,
+        poke_simple:544,
+        poke_simple:545 .
+
+ability:Stakeout a ex:Ability ;
+    ex:abilityName "Stakeout"^^xsd:string ;
+    ex:pokemonCount "2"^^xsd:int ;
+    ex:possessedBy poke_simple:734,
+        poke_simple:735 .
+
+ability:Stall a ex:Ability ;
+    ex:abilityName "Stall"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:302 .
+
+ability:Stamina a ex:Ability ;
+    ex:abilityName "Stamina"^^xsd:string ;
+    ex:pokemonCount "2"^^xsd:int ;
+    ex:possessedBy poke_simple:749,
+        poke_simple:750 .
+
+ability:Stance_Change a ex:Ability ;
+    ex:abilityName "Stance Change"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:681 .
+
+ability:Static a ex:Ability ;
+    ex:abilityName "Static"^^xsd:string ;
+    ex:pokemonCount "15"^^xsd:int ;
+    ex:possessedBy poke_simple:100,
+        poke_simple:101,
+        poke_simple:125,
+        poke_simple:145,
+        poke_simple:172,
+        poke_simple:179,
+        poke_simple:180,
+        poke_simple:181,
+        poke_simple:239,
+        poke_simple:25,
+        poke_simple:26,
+        poke_simple:309,
+        poke_simple:310,
+        poke_simple:587,
+        poke_simple:618 .
+
+ability:Steadfast a ex:Ability ;
+    ex:abilityName "Steadfast"^^xsd:string ;
+    ex:pokemonCount "11"^^xsd:int ;
+    ex:possessedBy poke_simple:123,
+        poke_simple:236,
+        poke_simple:237,
+        poke_simple:447,
+        poke_simple:448,
+        poke_simple:475,
+        poke_simple:66,
+        poke_simple:67,
+        poke_simple:68,
+        poke_simple:744,
+        poke_simple:745 .
+
+ability:Steelworker a ex:Ability ;
+    ex:abilityName "Steelworker"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:781 .
+
+ability:Stench a ex:Ability ;
+    ex:abilityName "Stench"^^xsd:string ;
+    ex:pokemonCount "7"^^xsd:int ;
+    ex:possessedBy poke_simple:434,
+        poke_simple:435,
+        poke_simple:44,
+        poke_simple:568,
+        poke_simple:569,
+        poke_simple:88,
+        poke_simple:89 .
+
+ability:Sticky_Hold a ex:Ability ;
+    ex:abilityName "Sticky Hold"^^xsd:string ;
+    ex:pokemonCount "8"^^xsd:int ;
+    ex:possessedBy poke_simple:316,
+        poke_simple:317,
+        poke_simple:422,
+        poke_simple:423,
+        poke_simple:568,
+        poke_simple:617,
+        poke_simple:88,
+        poke_simple:89 .
+
+ability:Storm_Drain a ex:Ability ;
+    ex:abilityName "Storm Drain"^^xsd:string ;
+    ex:pokemonCount "7"^^xsd:int ;
+    ex:possessedBy poke_simple:345,
+        poke_simple:346,
+        poke_simple:422,
+        poke_simple:423,
+        poke_simple:456,
+        poke_simple:457,
+        poke_simple:556 .
+
+ability:Strong_Jaw a ex:Ability ;
+    ex:abilityName "Strong Jaw"^^xsd:string ;
+    ex:pokemonCount "5"^^xsd:int ;
+    ex:possessedBy poke_simple:696,
+        poke_simple:697,
+        poke_simple:734,
+        poke_simple:735,
+        poke_simple:779 .
+
+ability:Sturdy a ex:Ability ;
+    ex:abilityName "Sturdy"^^xsd:string ;
+    ex:pokemonCount "41"^^xsd:int ;
+    ex:possessedBy poke_simple:185,
+        poke_simple:204,
+        poke_simple:205,
+        poke_simple:208,
+        poke_simple:213,
+        poke_simple:227,
+        poke_simple:232,
+        poke_simple:299,
+        poke_simple:304,
+        poke_simple:305,
+        poke_simple:306,
+        poke_simple:369,
+        poke_simple:377,
+        poke_simple:410,
+        poke_simple:411,
+        poke_simple:438,
+        poke_simple:462,
+        poke_simple:476,
+        poke_simple:524,
+        poke_simple:525,
+        poke_simple:526,
+        poke_simple:539,
+        poke_simple:557,
+        poke_simple:558,
+        poke_simple:564,
+        poke_simple:565,
+        poke_simple:696,
+        poke_simple:703,
+        poke_simple:712,
+        poke_simple:713,
+        poke_simple:74,
+        poke_simple:75,
+        poke_simple:76,
+        poke_simple:777,
+        poke_simple:790,
+        poke_simple:81,
+        poke_simple:82,
+        poke_simple:95 .
+
+ability:Suction_Cups a ex:Ability ;
+    ex:abilityName "Suction Cups"^^xsd:string ;
+    ex:pokemonCount "5"^^xsd:int ;
+    ex:possessedBy poke_simple:224,
+        poke_simple:345,
+        poke_simple:346,
+        poke_simple:686,
+        poke_simple:687 .
+
+ability:Super_Luck a ex:Ability ;
+    ex:abilityName "Super Luck"^^xsd:string ;
+    ex:pokemonCount "9"^^xsd:int ;
+    ex:possessedBy poke_simple:175,
+        poke_simple:176,
+        poke_simple:198,
+        poke_simple:359,
+        poke_simple:430,
+        poke_simple:468,
+        poke_simple:519,
+        poke_simple:520,
+        poke_simple:521 .
+
+ability:Surge_Surfer a ex:Ability ;
+    ex:abilityName "Surge Surfer"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:26 .
+
+ability:Swarm a ex:Ability ;
+    ex:abilityName "Swarm"^^xsd:string ;
+    ex:pokemonCount "25"^^xsd:int ;
+    ex:possessedBy poke_simple:123,
+        poke_simple:15,
+        poke_simple:165,
+        poke_simple:166,
+        poke_simple:167,
+        poke_simple:168,
+        poke_simple:212,
+        poke_simple:214,
+        poke_simple:267,
+        poke_simple:313,
+        poke_simple:402,
+        poke_simple:414,
+        poke_simple:540,
+        poke_simple:542,
+        poke_simple:543,
+        poke_simple:544,
+        poke_simple:545,
+        poke_simple:588,
+        poke_simple:589,
+        poke_simple:595,
+        poke_simple:596,
+        poke_simple:632,
+        poke_simple:636,
+        poke_simple:637,
+        poke_simple:736 .
+
+ability:Sweet_Veil a ex:Ability ;
+    ex:abilityName "Sweet Veil"^^xsd:string ;
+    ex:pokemonCount "7"^^xsd:int ;
+    ex:possessedBy poke_simple:684,
+        poke_simple:685,
+        poke_simple:742,
+        poke_simple:743,
+        poke_simple:761,
+        poke_simple:762,
+        poke_simple:763 .
+
+ability:Swift_Swim a ex:Ability ;
+    ex:abilityName "Swift Swim"^^xsd:string ;
+    ex:pokemonCount "38"^^xsd:int ;
+    ex:possessedBy poke_simple:116,
+        poke_simple:118,
+        poke_simple:119,
+        poke_simple:129,
+        poke_simple:138,
+        poke_simple:139,
+        poke_simple:140,
+        poke_simple:141,
+        poke_simple:211,
+        poke_simple:226,
+        poke_simple:230,
+        poke_simple:270,
+        poke_simple:271,
+        poke_simple:272,
+        poke_simple:283,
+        poke_simple:347,
+        poke_simple:348,
+        poke_simple:349,
+        poke_simple:367,
+        poke_simple:368,
+        poke_simple:369,
+        poke_simple:370,
+        poke_simple:418,
+        poke_simple:419,
+        poke_simple:456,
+        poke_simple:457,
+        poke_simple:458,
+        poke_simple:535,
+        poke_simple:536,
+        poke_simple:537,
+        poke_simple:54,
+        poke_simple:55,
+        poke_simple:564,
+        poke_simple:565,
+        poke_simple:60,
+        poke_simple:61,
+        poke_simple:614,
+        poke_simple:62 .
+
+ability:Symbiosis a ex:Ability ;
+    ex:abilityName "Symbiosis"^^xsd:string ;
+    ex:pokemonCount "4"^^xsd:int ;
+    ex:possessedBy poke_simple:669,
+        poke_simple:670,
+        poke_simple:671,
+        poke_simple:765 .
+
+ability:Synchronize a ex:Ability ;
+    ex:abilityName "Synchronize"^^xsd:string ;
+    ex:pokemonCount "15"^^xsd:int ;
+    ex:possessedBy poke_simple:151,
+        poke_simple:177,
+        poke_simple:178,
+        poke_simple:196,
+        poke_simple:197,
+        poke_simple:280,
+        poke_simple:281,
+        poke_simple:282,
+        poke_simple:517,
+        poke_simple:518,
+        poke_simple:605,
+        poke_simple:606,
+        poke_simple:63,
+        poke_simple:64,
+        poke_simple:65 .
+
+ability:Tangled_Feet a ex:Ability ;
+    ex:abilityName "Tangled Feet"^^xsd:string ;
+    ex:pokemonCount "7"^^xsd:int ;
+    ex:possessedBy poke_simple:16,
+        poke_simple:17,
+        poke_simple:18,
+        poke_simple:327,
+        poke_simple:441,
+        poke_simple:84,
+        poke_simple:85 .
+
+ability:Tangling_Hair a ex:Ability ;
+    ex:abilityName "Tangling Hair"^^xsd:string ;
+    ex:pokemonCount "2"^^xsd:int ;
+    ex:possessedBy poke_simple:50,
+        poke_simple:51 .
+
+ability:Technician a ex:Ability ;
+    ex:abilityName "Technician"^^xsd:string ;
+    ex:pokemonCount "16"^^xsd:int ;
+    ex:possessedBy poke_simple:122,
+        poke_simple:123,
+        poke_simple:212,
+        poke_simple:235,
+        poke_simple:237,
+        poke_simple:286,
+        poke_simple:402,
+        poke_simple:407,
+        poke_simple:424,
+        poke_simple:439,
+        poke_simple:52,
+        poke_simple:53,
+        poke_simple:572,
+        poke_simple:573 .
+
+ability:Telepathy a ex:Ability ;
+    ex:abilityName "Telepathy"^^xsd:string ;
+    ex:pokemonCount "21"^^xsd:int ;
+    ex:possessedBy poke_simple:202,
+        poke_simple:280,
+        poke_simple:281,
+        poke_simple:282,
+        poke_simple:307,
+        poke_simple:308,
+        poke_simple:360,
+        poke_simple:483,
+        poke_simple:484,
+        poke_simple:487,
+        poke_simple:517,
+        poke_simple:518,
+        poke_simple:605,
+        poke_simple:606,
+        poke_simple:714,
+        poke_simple:715,
+        poke_simple:765,
+        poke_simple:785,
+        poke_simple:786,
+        poke_simple:787,
+        poke_simple:788 .
+
+ability:Teravolt a ex:Ability ;
+    ex:abilityName "Teravolt"^^xsd:string ;
+    ex:pokemonCount "2"^^xsd:int ;
+    ex:possessedBy poke_simple:644,
+        poke_simple:646 .
+
+ability:Thick_Fat a ex:Ability ;
+    ex:abilityName "Thick Fat"^^xsd:string ;
+    ex:pokemonCount "23"^^xsd:int ;
+    ex:possessedBy poke_simple:143,
+        poke_simple:183,
+        poke_simple:184,
+        poke_simple:19,
+        poke_simple:20,
+        poke_simple:220,
+        poke_simple:221,
+        poke_simple:241,
+        poke_simple:296,
+        poke_simple:297,
+        poke_simple:298,
+        poke_simple:325,
+        poke_simple:326,
+        poke_simple:363,
+        poke_simple:364,
+        poke_simple:365,
+        poke_simple:432,
+        poke_simple:446,
+        poke_simple:473,
+        poke_simple:498,
+        poke_simple:499,
+        poke_simple:86,
+        poke_simple:87 .
+
+ability:Tinted_Lens a ex:Ability ;
+    ex:abilityName "Tinted Lens"^^xsd:string ;
+    ex:pokemonCount "9"^^xsd:int ;
+    ex:possessedBy poke_simple:12,
+        poke_simple:163,
+        poke_simple:164,
+        poke_simple:314,
+        poke_simple:414,
+        poke_simple:469,
+        poke_simple:48,
+        poke_simple:49,
+        poke_simple:561 .
+
+ability:Torrent a ex:Ability ;
+    ex:abilityName "Torrent"^^xsd:string ;
+    ex:pokemonCount "23"^^xsd:int ;
+    ex:possessedBy poke_simple:158,
+        poke_simple:159,
+        poke_simple:160,
+        poke_simple:258,
+        poke_simple:259,
+        poke_simple:260,
+        poke_simple:393,
+        poke_simple:394,
+        poke_simple:395,
+        poke_simple:501,
+        poke_simple:502,
+        poke_simple:503,
+        poke_simple:515,
+        poke_simple:516,
+        poke_simple:656,
+        poke_simple:657,
+        poke_simple:658,
+        poke_simple:7,
+        poke_simple:728,
+        poke_simple:729,
+        poke_simple:730,
+        poke_simple:8,
+        poke_simple:9 .
+
+ability:Tough_Claws a ex:Ability ;
+    ex:abilityName "Tough Claws"^^xsd:string ;
+    ex:pokemonCount "2"^^xsd:int ;
+    ex:possessedBy poke_simple:688,
+        poke_simple:689 .
+
+ability:Toxic_Boost a ex:Ability ;
+    ex:abilityName "Toxic Boost"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:335 .
+
+ability:Trace a ex:Ability ;
+    ex:abilityName "Trace"^^xsd:string ;
+    ex:pokemonCount "5"^^xsd:int ;
+    ex:possessedBy poke_simple:137,
+        poke_simple:233,
+        poke_simple:280,
+        poke_simple:281,
+        poke_simple:282 .
+
+ability:Triage a ex:Ability ;
+    ex:abilityName "Triage"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:764 .
+
+ability:Truant a ex:Ability ;
+    ex:abilityName "Truant"^^xsd:string ;
+    ex:pokemonCount "3"^^xsd:int ;
+    ex:possessedBy poke_simple:287,
+        poke_simple:289,
+        poke_simple:632 .
+
+ability:Turboblaze a ex:Ability ;
+    ex:abilityName "Turboblaze"^^xsd:string ;
+    ex:pokemonCount "2"^^xsd:int ;
+    ex:possessedBy poke_simple:643,
+        poke_simple:646 .
+
+ability:Unaware a ex:Ability ;
+    ex:abilityName "Unaware"^^xsd:string ;
+    ex:pokemonCount "9"^^xsd:int ;
+    ex:possessedBy poke_simple:194,
+        poke_simple:195,
+        poke_simple:36,
+        poke_simple:399,
+        poke_simple:400,
+        poke_simple:527,
+        poke_simple:528,
+        poke_simple:771,
+        poke_simple:789 .
+
+ability:Unburden a ex:Ability ;
+    ex:abilityName "Unburden"^^xsd:string ;
+    ex:pokemonCount "12"^^xsd:int ;
+    ex:possessedBy poke_simple:106,
+        poke_simple:252,
+        poke_simple:253,
+        poke_simple:254,
+        poke_simple:425,
+        poke_simple:426,
+        poke_simple:509,
+        poke_simple:510,
+        poke_simple:617,
+        poke_simple:684,
+        poke_simple:685,
+        poke_simple:701 .
+
+ability:Unnerve a ex:Ability ;
+    ex:abilityName "Unnerve"^^xsd:string ;
+    ex:pokemonCount "20"^^xsd:int ;
+    ex:possessedBy poke_simple:142,
+        poke_simple:150,
+        poke_simple:217,
+        poke_simple:228,
+        poke_simple:229,
+        poke_simple:23,
+        poke_simple:24,
+        poke_simple:248,
+        poke_simple:284,
+        poke_simple:416,
+        poke_simple:52,
+        poke_simple:53,
+        poke_simple:595,
+        poke_simple:596,
+        poke_simple:610,
+        poke_simple:611,
+        poke_simple:612,
+        poke_simple:667,
+        poke_simple:668,
+        poke_simple:760 .
+
+ability:Victory_Star a ex:Ability ;
+    ex:abilityName "Victory Star"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:494 .
+
+ability:Vital_Spirit a ex:Ability ;
+    ex:abilityName "Vital Spirit"^^xsd:string ;
+    ex:pokemonCount "14"^^xsd:int ;
+    ex:possessedBy poke_simple:125,
+        poke_simple:126,
+        poke_simple:225,
+        poke_simple:236,
+        poke_simple:239,
+        poke_simple:240,
+        poke_simple:288,
+        poke_simple:466,
+        poke_simple:467,
+        poke_simple:506,
+        poke_simple:56,
+        poke_simple:57,
+        poke_simple:744,
+        poke_simple:745 .
+
+ability:Volt_Absorb a ex:Ability ;
+    ex:abilityName "Volt Absorb"^^xsd:string ;
+    ex:pokemonCount "6"^^xsd:int ;
+    ex:possessedBy poke_simple:135,
+        poke_simple:170,
+        poke_simple:171,
+        poke_simple:312,
+        poke_simple:417,
+        poke_simple:642 .
+
+ability:Water_Absorb a ex:Ability ;
+    ex:abilityName "Water Absorb"^^xsd:string ;
+    ex:pokemonCount "23"^^xsd:int ;
+    ex:possessedBy poke_simple:131,
+        poke_simple:134,
+        poke_simple:170,
+        poke_simple:171,
+        poke_simple:186,
+        poke_simple:194,
+        poke_simple:195,
+        poke_simple:226,
+        poke_simple:331,
+        poke_simple:332,
+        poke_simple:458,
+        poke_simple:535,
+        poke_simple:536,
+        poke_simple:537,
+        poke_simple:556,
+        poke_simple:592,
+        poke_simple:593,
+        poke_simple:60,
+        poke_simple:61,
+        poke_simple:62,
+        poke_simple:721,
+        poke_simple:751,
+        poke_simple:752 .
+
+ability:Water_Bubble a ex:Ability ;
+    ex:abilityName "Water Bubble"^^xsd:string ;
+    ex:pokemonCount "2"^^xsd:int ;
+    ex:possessedBy poke_simple:751,
+        poke_simple:752 .
+
+ability:Water_Compaction a ex:Ability ;
+    ex:abilityName "Water Compaction"^^xsd:string ;
+    ex:pokemonCount "2"^^xsd:int ;
+    ex:possessedBy poke_simple:769,
+        poke_simple:770 .
+
+ability:Water_Veil a ex:Ability ;
+    ex:abilityName "Water Veil"^^xsd:string ;
+    ex:pokemonCount "11"^^xsd:int ;
+    ex:possessedBy poke_simple:118,
+        poke_simple:119,
+        poke_simple:226,
+        poke_simple:320,
+        poke_simple:321,
+        poke_simple:367,
+        poke_simple:418,
+        poke_simple:419,
+        poke_simple:456,
+        poke_simple:457,
+        poke_simple:458 .
+
+ability:Weak_Armor a ex:Ability ;
+    ex:abilityName "Weak Armor"^^xsd:string ;
+    ex:pokemonCount "18"^^xsd:int ;
+    ex:possessedBy poke_simple:138,
+        poke_simple:139,
+        poke_simple:140,
+        poke_simple:141,
+        poke_simple:218,
+        poke_simple:219,
+        poke_simple:227,
+        poke_simple:524,
+        poke_simple:525,
+        poke_simple:557,
+        poke_simple:558,
+        poke_simple:569,
+        poke_simple:582,
+        poke_simple:583,
+        poke_simple:584,
+        poke_simple:629,
+        poke_simple:630,
+        poke_simple:95 .
+
+ability:White_Smoke a ex:Ability ;
+    ex:abilityName "White Smoke"^^xsd:string ;
+    ex:pokemonCount "2"^^xsd:int ;
+    ex:possessedBy poke_simple:324,
+        poke_simple:631 .
+
+ability:Wimp_Out a ex:Ability ;
+    ex:abilityName "Wimp Out"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:767 .
+
+ability:Wonder_Guard a ex:Ability ;
+    ex:abilityName "Wonder Guard"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:292 .
+
+ability:Wonder_Skin a ex:Ability ;
+    ex:abilityName "Wonder Skin"^^xsd:string ;
+    ex:pokemonCount "5"^^xsd:int ;
+    ex:possessedBy poke_simple:300,
+        poke_simple:301,
+        poke_simple:49,
+        poke_simple:561,
+        poke_simple:779 .
+
+ability:Zen_Mode a ex:Ability ;
+    ex:abilityName "Zen Mode"^^xsd:string ;
+    ex:pokemonCount "1"^^xsd:int ;
+    ex:possessedBy poke_simple:555 .
+
+
