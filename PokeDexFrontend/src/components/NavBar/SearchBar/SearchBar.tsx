@@ -1,21 +1,40 @@
 import {useState, useEffect, useRef} from 'react';
 import {usePokemon} from '../../../contexts/PokemonContext';
-import { getAllPokemon } from '../../../data/PokemonDatabase';
+import { getSearchList, getPokemonByName } from '../../../services/PokemonApiService';
 import type {Pokemon} from '../../../Types/Pokemon';
 import TypeCard from '../../Shared/TypeCard/TypeCard';
 import './SearchBar.css';
-
-const SEARCHABLE_POKEMON: Pokemon[] = getAllPokemon();
 
 
 function SearchBar() {
     const {setSelectedPokemon} = usePokemon();
     const [searchText, setSearchText] = useState('');
     const [showDropdown, setShowDropdown] = useState(false);
+    const [allPokemon, setAllPokemon] = useState<Pokemon[]>([]);
+    const [loading, setLoading] = useState(true);
     const searchRef = useRef<HTMLDivElement>(null);
 
+    // Load Pokemon search list on component mount (lightweight)
+    useEffect(() => {
+        async function loadPokemon() {
+            try {
+                const pokemon = await getSearchList(1000);
+                console.log('Loaded search list count:', pokemon.length);
+                setAllPokemon(pokemon);
+            } catch (error) {
+                console.error('Failed to load search list:', error);
+            } finally {
+                setLoading(false);
+            }
+        }
+        loadPokemon();
+    }, []);
 
-    const filteredPokemon = SEARCHABLE_POKEMON.filter(pokemon => pokemon.name.toLowerCase().includes(searchText.toLowerCase()));
+    const filteredPokemon = searchText.trim() 
+        ? allPokemon
+            .filter(pokemon => pokemon.name.toLowerCase().includes(searchText.toLowerCase()))
+            .slice(0, 20) // Limit to 20 results for performance
+        : [];
 
     // Handle click outside to close dropdown
     useEffect(() => {
@@ -29,17 +48,22 @@ function SearchBar() {
         return () => document.removeEventListener('mousedown', handleClickOutside);
     }, [])
 
-    const handlePokemonSelect = (pokemon: Pokemon) => {
-        setSelectedPokemon(pokemon);
+    const handlePokemonSelect = async (pokemon: Pokemon) => {
+        // Fetch full Pokemon data by name to get the exact form selected from the search
+        const fullPokemon = await getPokemonByName(pokemon.name);
+        if (fullPokemon) {
+            setSelectedPokemon(fullPokemon);
+        }
         setSearchText('');
         setShowDropdown(false);
     }
 
     // Debug logging
-    console.log('showDropdown:', showDropdown);
-    console.log('filteredPokemon:', filteredPokemon);
-
-
+    console.log('searchText:', searchText);
+    console.log('filteredPokemon count:', filteredPokemon.length);
+    if (filteredPokemon.length > 0 && filteredPokemon.length <= 5) {
+        console.log('filteredPokemon:', filteredPokemon.map(p => p.name));
+    }
 
     return(
         <div className="search-bar-container" ref={searchRef}>
@@ -50,22 +74,27 @@ function SearchBar() {
                 value={searchText}
                 onChange={(e) => {
                     setSearchText(e.target.value);
-                    setShowDropdown(true);
+                    setShowDropdown(e.target.value.trim().length > 0);
                 }}
                 onFocus={() => {
-                    console.log('Input focused!');
-                    setShowDropdown(true);
+                    if (searchText.trim().length > 0) {
+                        setShowDropdown(true);
+                    }
                 }}
             />
 
             {showDropdown && (
-                <div className="search-bar-dropdown">
-                    {filteredPokemon.length > 0 ? (
-                        filteredPokemon.map((pokemon) => (
+                <div className="search-bar-dropdown" data-filtered-count={filteredPokemon.length} key={searchText}>
+                    {loading ? (
+                        <div className="search-item-empty">Loading...</div>
+                    ) : filteredPokemon.length > 0 ? (
+                        filteredPokemon.map((pokemon, index) => (
                             <div 
-                                key={pokemon.id}
+                                key={`${pokemon.id}-${pokemon.name}-${index}`}
                                 className="search-item"
                                 onClick={() => handlePokemonSelect(pokemon)}
+                                data-pokemon-name={pokemon.name}
+                                data-index={index}
                             >
                                 <div className="search-item-id">
                                     #{pokemon.id.toString().padStart(3, '0')}
@@ -74,8 +103,8 @@ function SearchBar() {
                                     {pokemon.name}
                                 </div>
                                 <div className="search-item-types">
-                                    {pokemon.types.map((type) => (
-                                        <TypeCard key={type} type={type} small={true} />
+                                    {pokemon.types.map((type, typeIndex) => (
+                                        <TypeCard key={`${type}-${typeIndex}`} type={type} small={true} />
                                     ))}
                                 </div>
                             </div>

@@ -42,6 +42,11 @@ export const TYPE_COLORS: Record<PokemonType, string> = {
     [PokemonType.FAIRY]: "#ee99ac"
 };
 
-export function getTypeColor(type: PokemonType): string {
-    return TYPE_COLORS[type];
+export function getTypeColor(type: PokemonType | string): string {
+    // If type is already a PokemonType value, use it directly
+    // Otherwise, find the matching PokemonType key
+    const typeValue = Object.values(PokemonType).includes(type as any) 
+        ? type as PokemonType
+        : type as PokemonType;
+    return TYPE_COLORS[typeValue] || TYPE_COLORS[PokemonType.NORMAL];
 }

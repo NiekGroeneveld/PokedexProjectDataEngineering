@@ -1,43 +1,61 @@
 import "./RecommenderBox.css";
 import PokemonCard from "../../Shared/PokemonCard/Pokemoncard";
+import { useState, useEffect } from "react";
 
 import { usePokemon } from "../../../contexts/PokemonContext";
-import { getAllPokemon } from "../../../data/PokemonDatabase";
+import { getRecommendations, getPokemonCardById, searchPokemonById } from "../../../services/PokemonApiService";
 import { getTypeColor } from "../../../Types/PokemonType";
-import type { Pokemon } from "../../../Types/Pokemon";
 
 const MAX_RECOMMENDATIONS = 5;
 
-const hasSharedType = (a: Pokemon, b: Pokemon): boolean => {
-    return a.types.some(type => b.types.includes(type));
-};
-
-const padRecommendations = (entries: Pokemon[], fallback: Pokemon): Pokemon[] => {
-    const padded = [...entries];
-    while (padded.length < MAX_RECOMMENDATIONS) {
-        padded.push(fallback);
-    }
-    return padded.slice(0, MAX_RECOMMENDATIONS);
-};
-
 export default function RecommenderBox() {
     const { selectedPokemon, setSelectedPokemon } = usePokemon();
+    const [bestMatches, setBestMatches] = useState<Array<{id: number; name: string; types: string[]; imageUrl: string}>>([]);
+    const [worstMatches, setWorstMatches] = useState<Array<{id: number; name: string; types: string[]; imageUrl: string}>>([]);
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        if (!selectedPokemon) return;
+
+        async function loadRecommendations() {
+            if (!selectedPokemon?.id) return;
+            
+            setLoading(true);
+            try {
+                const recommendations = await getRecommendations(selectedPokemon.id, MAX_RECOMMENDATIONS);
+                
+                // Load card data for each recommendation
+                const bestCards = await Promise.all(
+                    recommendations.best.map(async (rec) => {
+                        const card = await getPokemonCardById(rec.id);
+                        return card || { id: rec.id, name: rec.name, types: [], imageUrl: '' };
+                    })
+                );
+                
+                const worstCards = await Promise.all(
+                    recommendations.worst.map(async (rec) => {
+                        const card = await getPokemonCardById(rec.id);
+                        return card || { id: rec.id, name: rec.name, types: [], imageUrl: '' };
+                    })
+                );
+                
+                setBestMatches(bestCards);
+                setWorstMatches(worstCards);
+            } catch (error) {
+                console.error('Failed to load recommendations:', error);
+                setBestMatches([]);
+                setWorstMatches([]);
+            } finally {
+                setLoading(false);
+            }
+        }
+
+        loadRecommendations();
+    }, [selectedPokemon?.id]);
 
     if (!selectedPokemon) {
         return null;
     }
-
-    const allPokemon = getAllPokemon().filter(pokemon => pokemon.id !== selectedPokemon.id);
-
-    const bestMatches = padRecommendations(
-        allPokemon.filter(pokemon => hasSharedType(pokemon, selectedPokemon)),
-        selectedPokemon
-    );
-
-    const worstMatches = padRecommendations(
-        allPokemon.filter(pokemon => !hasSharedType(pokemon, selectedPokemon)),
-        selectedPokemon
-    );
 
     return (
         <section className="recommender-section">
@@ -52,16 +70,25 @@ export default function RecommenderBox() {
                         <div className="recommendation-panel">
                             <h3 className="recommendation-title">Best Matches</h3>
                             <div className="recommendation-list">
-                                {bestMatches.map((pokemon, index) => (
-                                    <PokemonCard
-                                        key={`best-${pokemon.id}-${index}`}
-                                        label={`Best Match ${index + 1}`}
-                                        name={pokemon.name}
-                                        imageUrl={pokemon.imageUrl}
-                                        typeColor={pokemon.types.length > 0 ? getTypeColor(pokemon.types[0]) : "#777"}
-                                        onSelect={() => setSelectedPokemon(pokemon)}
-                                    />
-                                ))}
+                                {loading ? (
+                                    <div style={{padding: '20px', textAlign: 'center'}}>Loading...</div>
+                                ) : bestMatches.length > 0 ? (
+                                    bestMatches.map((pokemon, index) => (
+                                        <PokemonCard
+                                            key={`best-${pokemon.id}-${index}`}
+                                            label={`Best Match ${index + 1}`}
+                                            name={pokemon.name}
+                                            imageUrl={pokemon.imageUrl}
+                                            typeColor={pokemon.types.length > 0 ? getTypeColor(pokemon.types[0]) : "#777"}
+                                            onSelect={async () => {
+                                                const fullPokemon = await searchPokemonById(pokemon.id);
+                                                if (fullPokemon) setSelectedPokemon(fullPokemon);
+                                            }}
+                                        />
+                                    ))
+                                ) : (
+                                    <div style={{padding: '20px', textAlign: 'center'}}>No recommendations</div>
+                                )}
                             </div>
                         </div>
                     </div>
@@ -70,16 +97,25 @@ export default function RecommenderBox() {
                         <div className="recommendation-panel">
                             <h3 className="recommendation-title">Worst Matches</h3>
                             <div className="recommendation-list">
-                                {worstMatches.map((pokemon, index) => (
-                                    <PokemonCard
-                                        key={`worst-${pokemon.id}-${index}`}
-                                        label={`Worst Match ${index + 1}`}
-                                        name={pokemon.name}
-                                        imageUrl={pokemon.imageUrl}
-                                        typeColor={pokemon.types.length > 0 ? getTypeColor(pokemon.types[0]) : "#777"}
-                                        onSelect={() => setSelectedPokemon(pokemon)}
-                                    />
-                                ))}
+                                {loading ? (
+                                    <div style={{padding: '20px', textAlign: 'center'}}>Loading...</div>
+                                ) : worstMatches.length > 0 ? (
+                                    worstMatches.map((pokemon, index) => (
+                                        <PokemonCard
+                                            key={`worst-${pokemon.id}-${index}`}
+                                            label={`Worst Match ${index + 1}`}
+                                            name={pokemon.name}
+                                            imageUrl={pokemon.imageUrl}
+                                            typeColor={pokemon.types.length > 0 ? getTypeColor(pokemon.types[0]) : "#777"}
+                                            onSelect={async () => {
+                                                const fullPokemon = await searchPokemonById(pokemon.id);
+                                                if (fullPokemon) setSelectedPokemon(fullPokemon);
+                                            }}
+                                        />
+                                    ))
+                                ) : (
+                                    <div style={{padding: '20px', textAlign: 'center'}}>No recommendations</div>
+                                )}
                             </div>
                         </div>
                     </div>

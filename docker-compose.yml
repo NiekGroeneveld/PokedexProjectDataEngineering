@@ -1,0 +1,65 @@
+services:
+  # GraphDB - Blazegraph RDF Database
+  blazegraph:
+    image: lyrasis/blazegraph:2.1.5
+    container_name: pokemon-graphdb
+    ports:
+      - "9999:8080"
+    volumes:
+      - blazegraph_data:/var/lib/jetty
+      - ./Recommender/data:/data:ro
+    environment:
+      JAVA_XMS: 512m
+      JAVA_XMX: 2g
+    networks:
+      - pokemon-network
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "-q", "http://localhost:8080/bigdata/"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  # Python Backend API
+  backend:
+    build:
+      context: ./Backend
+      dockerfile: Dockerfile
+    container_name: pokemon-backend
+    ports:
+      - "5000:5000"
+    environment:
+      - GRAPHDB_ENDPOINT=http://blazegraph:8080/bigdata/namespace/kb/sparql
+    depends_on:
+      blazegraph:
+        condition: service_healthy
+    networks:
+      - pokemon-network
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:5000/')"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  # React Frontend
+  frontend:
+    build:
+      context: ./PokeDexFrontend
+      dockerfile: Dockerfile
+    container_name: pokemon-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - pokemon-network
+    environment:
+      - VITE_API_URL=http://backend:5000
+
+networks:
+  pokemon-network:
+    driver: bridge
+
+volumes:
+  blazegraph_data:
+    driver: local

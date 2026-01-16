@@ -1,21 +1,51 @@
 import "./EvolutionChain.css";
 import EvolutionCard from "../../Shared/PokemonCard/Pokemoncard";
 import { usePokemon } from "../../../contexts/PokemonContext";
-import { searchPokemonById } from "../../../data/PokemonDatabase";
-import { Pokemon } from "../../../Types/Pokemon";
+import { getPokemonCardById, searchPokemonById } from "../../../services/PokemonApiService";
 import { getTypeColor } from "../../../Types/PokemonType";
+import { useState, useEffect } from "react";
+
+type PokemonCard = {
+  id: number;
+  name: string;
+  types: string[];
+  imageUrl: string;
+};
 
 export default function EvolutionChain() {
   const { selectedPokemon, setSelectedPokemon } = usePokemon();
+  const [evolutionChain, setEvolutionChain] = useState<PokemonCard[]>([]);
 
-  if (!selectedPokemon || !selectedPokemon.evolutionChain) {
+  useEffect(() => {
+    if (!selectedPokemon || !selectedPokemon.evolutionChain) {
+      setEvolutionChain([]);
+      return;
+    }
+
+    async function loadEvolutionChain() {
+      if (!selectedPokemon?.evolutionChain) return;
+      
+      try {
+        // Load card data for each Pokemon in the evolution chain
+        const cards = await Promise.all(
+          selectedPokemon.evolutionChain.map(async (id) => {
+            const card = await getPokemonCardById(id);
+            return card || { id, name: 'Unknown', types: [], imageUrl: '' };
+          })
+        );
+        setEvolutionChain(cards);
+      } catch (error) {
+        console.error('Failed to load evolution chain:', error);
+        setEvolutionChain([]);
+      }
+    }
+
+    loadEvolutionChain();
+  }, [selectedPokemon?.id]);
+
+  if (!selectedPokemon || !selectedPokemon.evolutionChain || evolutionChain.length === 0) {
     return null;
   }
-
-  // Get all Pokemon in the evolution chain
-  const evolutionChain = selectedPokemon.evolutionChain
-    .map(id => searchPokemonById(id))
-    .filter((pokemon): pokemon is Pokemon => pokemon !== undefined);
 
   // Find current Pokemon's index in the chain
   const currentIndex = evolutionChain.findIndex(
@@ -59,20 +89,24 @@ export default function EvolutionChain() {
     return position.charAt(0).toUpperCase() + position.slice(1);
   };
 
-  const fallbackTypeColor = currentPokemon.types.length
+  const fallbackTypeColor = currentPokemon.types.length > 0
     ? getTypeColor(currentPokemon.types[0])
     : "#f5f5f5";
 
-  const getPrimaryTypeColor = (pokemon: Pokemon | null | undefined): string => {
+  const getPrimaryTypeColor = (pokemon: PokemonCard | null | undefined): string => {
     if (!pokemon || pokemon.types.length === 0) {
       return fallbackTypeColor;
     }
     return getTypeColor(pokemon.types[0]);
   };
 
-  const handleSelect = (pokemon: Pokemon | null) => () => {
+  const handleSelect = (pokemon: PokemonCard | null) => async () => {
     if (pokemon) {
-      setSelectedPokemon(pokemon);
+      // Load full Pokemon data by ID (fast, gets base form)
+      const fullPokemon = await searchPokemonById(pokemon.id);
+      if (fullPokemon) {
+        setSelectedPokemon(fullPokemon);
+      }
     }
   };
 
