@@ -1,0 +1,130 @@
+@prefix ex:  <http://example.org/> .
+@prefix poke_simple: <http://example.org/pokemon/simple/> .
+@prefix ability: <http://example.org/abilities/> .
+@prefix type: <http://example.org/types/> .
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+
+
+# Classes
+---------------------------------------
+
+ex:Pokemon a owl:Class .
+ex:LegendaryPokemon a owl:Class ; rdfs:subClassOf ex:Pokemon .  
+
+ex:Ability a owl:Class .
+ex:PokemonType a owl:Class .
+
+
+
+
+# Object properties
+---------------------------------------
+
+# Types
+ex:hasType a owl:ObjectProperty ;
+  rdfs:domain ex:Pokemon ;
+  rdfs:range  ex:PokemonType .
+
+ex:type1 a owl:ObjectProperty ;
+  rdfs:subPropertyOf ex:hasType ;
+  rdfs:domain ex:Pokemon ;
+  rdfs:range  ex:PokemonType .
+
+ex:type2 a owl:ObjectProperty ;
+  rdfs:subPropertyOf ex:hasType ;
+  rdfs:domain ex:Pokemon ;
+  rdfs:range  ex:PokemonType .
+
+# Abilities (in current data the 'Ability' - possessedBy Pokemon)
+ex:possessedBy a owl:ObjectProperty ;
+  rdfs:domain ex:Ability ;
+  rdfs:range  ex:Pokemon .
+
+# Convenience inverse for UI queries '(Pokemon' - hasAbility Ability)
+ex:hasAbility a owl:ObjectProperty ;
+  owl:inverseOf ex:possessedBy ;
+  rdfs:domain ex:Pokemon ;
+  rdfs:range  ex:Ability .
+
+# Evolution links
+ex:evolvesTo a owl:ObjectProperty ;
+  rdfs:domain ex:Pokemon ;
+  rdfs:range  ex:Pokemon .
+
+ex:evolvesFrom a owl:ObjectProperty ;
+  owl:inverseOf ex:evolvesTo ;
+  rdfs:domain ex:Pokemon ;
+  rdfs:range  ex:Pokemon .
+
+# Weakness / resistance (object links to Type resources)
+ex:weakTo a owl:ObjectProperty ;
+  rdfs:domain ex:Pokemon ;
+  rdfs:range  ex:PokemonType .
+
+ex:resistantTo a owl:ObjectProperty ;
+  rdfs:domain ex:Pokemon ;
+  rdfs:range  ex:PokemonType .
+
+
+
+
+# Datatype properties (core stats from pokemon_simple.ttl)
+---------------------------------------
+
+ex:number a owl:DatatypeProperty ; rdfs:domain ex:Pokemon ; rdfs:range xsd:int .
+ex:name   a owl:DatatypeProperty ; rdfs:domain ex:Pokemon ; rdfs:range xsd:string .
+ex:generation a owl:DatatypeProperty ; rdfs:domain ex:Pokemon ; rdfs:range xsd:int .
+
+ex:hp        a owl:DatatypeProperty ; rdfs:domain ex:Pokemon ; rdfs:range xsd:int .
+ex:attack    a owl:DatatypeProperty ; rdfs:domain ex:Pokemon ; rdfs:range xsd:int .
+ex:defense   a owl:DatatypeProperty ; rdfs:domain ex:Pokemon ; rdfs:range xsd:int .
+ex:sp_attack a owl:DatatypeProperty ; rdfs:domain ex:Pokemon ; rdfs:range xsd:int .
+ex:sp_defense a owl:DatatypeProperty ; rdfs:domain ex:Pokemon ; rdfs:range xsd:int .
+ex:speed     a owl:DatatypeProperty ; rdfs:domain ex:Pokemon ; rdfs:range xsd:int .
+ex:total     a owl:DatatypeProperty ; rdfs:domain ex:Pokemon ; rdfs:range xsd:int .
+
+
+
+
+# Datatype properties (type effectiveness multipliers)
+---------------------------------------
+
+ex:damageMultiplierAgainst a owl:DatatypeProperty ;
+  rdfs:domain ex:Pokemon ;
+  rdfs:range xsd:float .
+
+# These exist in pokemon_type_effectiveness.ttl (ex:against_fire, etc.)
+ex:against_bug     rdfs:subPropertyOf ex:damageMultiplierAgainst .
+ex:against_dark    rdfs:subPropertyOf ex:damageMultiplierAgainst .
+ex:against_dragon  rdfs:subPropertyOf ex:damageMultiplierAgainst .
+ex:against_electric rdfs:subPropertyOf ex:damageMultiplierAgainst .
+ex:against_fairy   rdfs:subPropertyOf ex:damageMultiplierAgainst .
+ex:against_fight   rdfs:subPropertyOf ex:damageMultiplierAgainst .
+ex:against_fire    rdfs:subPropertyOf ex:damageMultiplierAgainst .
+ex:against_flying  rdfs:subPropertyOf ex:damageMultiplierAgainst .
+ex:against_ghost   rdfs:subPropertyOf ex:damageMultiplierAgainst .
+ex:against_grass   rdfs:subPropertyOf ex:damageMultiplierAgainst .
+ex:against_ground  rdfs:subPropertyOf ex:damageMultiplierAgainst .
+ex:against_ice     rdfs:subPropertyOf ex:damageMultiplierAgainst .
+ex:against_normal  rdfs:subPropertyOf ex:damageMultiplierAgainst .
+ex:against_poison  rdfs:subPropertyOf ex:damageMultiplierAgainst .
+ex:against_psychic rdfs:subPropertyOf ex:damageMultiplierAgainst .
+ex:against_rock    rdfs:subPropertyOf ex:damageMultiplierAgainst .
+ex:against_steel   rdfs:subPropertyOf ex:damageMultiplierAgainst .
+ex:against_water   rdfs:subPropertyOf ex:damageMultiplierAgainst .
+
+
+
+
+# Tiny alignment for a known Type naming mismatch
+---------------------------------------
+
+# To fix the mismatch of fight and fighting used in different files
+
+type:Fight owl:sameAs type:Fighting .
