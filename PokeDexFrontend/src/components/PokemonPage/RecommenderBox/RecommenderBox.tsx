@@ -68,7 +68,7 @@ export default function RecommenderBox() {
                 <div className="recommender-box">
                     <div className="recommendation-column">
                         <div className="recommendation-panel">
-                            <h3 className="recommendation-title">Best Matches</h3>
+                            <h3 className="recommendation-title">Losing Matches</h3>
                             <div className="recommendation-list">
                                 {loading ? (
                                     <div style={{padding: '20px', textAlign: 'center'}}>Loading...</div>
@@ -76,7 +76,7 @@ export default function RecommenderBox() {
                                     bestMatches.map((pokemon, index) => (
                                         <PokemonCard
                                             key={`best-${pokemon.id}-${index}`}
-                                            label={`Best Match ${index + 1}`}
+                                            label={`Losing Match ${index + 1}`}
                                             name={pokemon.name}
                                             imageUrl={pokemon.imageUrl}
                                             typeColor={pokemon.types.length > 0 ? getTypeColor(pokemon.types[0]) : "#777"}
@@ -95,7 +95,7 @@ export default function RecommenderBox() {
 
                     <div className="recommendation-column">
                         <div className="recommendation-panel">
-                            <h3 className="recommendation-title">Worst Matches</h3>
+                            <h3 className="recommendation-title">Winning Matches</h3>
                             <div className="recommendation-list">
                                 {loading ? (
                                     <div style={{padding: '20px', textAlign: 'center'}}>Loading...</div>
@@ -103,7 +103,7 @@ export default function RecommenderBox() {
                                     worstMatches.map((pokemon, index) => (
                                         <PokemonCard
                                             key={`worst-${pokemon.id}-${index}`}
-                                            label={`Worst Match ${index + 1}`}
+                                            label={`Winning Match ${index + 1}`}
                                             name={pokemon.name}
                                             imageUrl={pokemon.imageUrl}
                                             typeColor={pokemon.types.length > 0 ? getTypeColor(pokemon.types[0]) : "#777"}

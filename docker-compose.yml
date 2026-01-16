@@ -19,6 +19,22 @@ services:
       timeout: 10s
       retries: 5
 
+  # Node.js Recommender Service
+  recommender:
+    build:
+      context: ./Recommender
+      dockerfile: Dockerfile
+    container_name: pokemon-recommender
+    ports:
+      - "3001:3001"
+    environment:
+      - GRAPHDB_ENDPOINT=http://blazegraph:8080/bigdata/namespace/kb/sparql
+    depends_on:
+      blazegraph:
+        condition: service_healthy
+    networks:
+      - pokemon-network
+
   # Python Backend API
   backend:
     build:
@@ -29,9 +45,12 @@ services:
       - "5000:5000"
     environment:
       - GRAPHDB_ENDPOINT=http://blazegraph:8080/bigdata/namespace/kb/sparql
+      - RECOMMENDER_URL=http://recommender:3001
     depends_on:
       blazegraph:
         condition: service_healthy
+      recommender:
+        condition: service_started
     networks:
       - pokemon-network
     healthcheck:

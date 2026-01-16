@@ -6,7 +6,7 @@ app.use(cors());
 app.use(express.json());
 
 // Blazegraph endpoint
-const SPARQL_ENDPOINT = "http://localhost:9999/bigdata/namespace/kb/sparql";
+const SPARQL_ENDPOINT = process.env.GRAPHDB_ENDPOINT || "http://localhost:9999/bigdata/namespace/kb/sparql";
 
 const esc = (s) => String(s).replace(/\\/g, "\\\\").replace(/"/g, '\\"');
 

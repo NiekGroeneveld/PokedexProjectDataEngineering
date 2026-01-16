@@ -6,11 +6,15 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy application
-COPY app.py .
+# Copy application files
+COPY config.py .
+COPY utils.py .
+COPY main.py .
+COPY services/ services/
+COPY domain/ domain/
 
 # Expose port
 EXPOSE 5000
 
 # Run the application
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "5000"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "5000"]
