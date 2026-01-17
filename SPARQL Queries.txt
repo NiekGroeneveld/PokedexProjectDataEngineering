@@ -1,0 +1,110 @@
+SPARQL Queries 
+
+1. Pokémon Name: 
+
+PREFIX ex: <http://example.org/>
+
+SELECT ?name ?number
+WHERE {
+  GRAPH <http://example.org/pokemon> {
+    <http://example.org/pokemon/simple/25>
+        ex:name ?name ;
+        ex:number ?number .
+       
+  }
+}
+
+
+2. Type:
+
+PREFIX ex: <http://example.org/>
+
+SELECT ?type
+WHERE {
+  GRAPH <http://example.org/pokemon> {
+    <http://example.org/pokemon/simple/25> ex:type1 ?type .
+  }
+}
+
+
+3. Stats:
+
+PREFIX ex: <http://example.org/>
+
+SELECT ?hp ?attack ?defense ?spAttack ?spDefense ?speed ?total
+WHERE {
+  GRAPH <http://example.org/pokemon> {
+    <http://example.org/pokemon/simple/25>
+        ex:hp ?hp ;
+        ex:attack ?attack ;
+        ex:defense ?defense ;
+        ex:sp_attack ?spAttack ;
+        ex:sp_defense ?spDefense ;
+        ex:speed ?speed ;
+        ex:total ?total .
+  }
+}
+
+4. Next Evolution:
+
+PREFIX ex: <http://example.org/>
+
+SELECT ?next
+WHERE {
+  GRAPH <http://example.org/pokemon> {
+    <http://example.org/pokemon/simple/25> ex:evolvesTo ?next .
+  }
+}
+
+5. Previous Evolution:
+
+PREFIX ex: <http://example.org/>
+
+SELECT ?prev
+WHERE {
+  GRAPH <http://example.org/pokemon> {
+    ?prev ex:evolvesTo <http://example.org/pokemon/simple/25> .
+  }
+}
+
+6. Weakness and Resistances:
+
+PREFIX ex: <http://example.org/>
+
+SELECT ?weak ?resist
+WHERE {
+  GRAPH <http://example.org/pokemon> {
+    OPTIONAL { <http://example.org/pokemon/simple/25> ex:weakTo ?weak . }
+    OPTIONAL { <http://example.org/pokemon/simple/25> ex:resistantTo ?resist . }
+  }
+}
+
+7. Pokémon Search by name:
+
+PREFIX ex: <http://example.org/>
+
+SELECT ?pokemon ?name
+WHERE {
+  GRAPH <http://example.org/pokemon> {
+    ?pokemon a ex:Pokemon ;
+             ex:name ?name .
+    FILTER(CONTAINS(LCASE(?name), "pika"))
+  }
+}
+
+8. List all Pokémon (for index maybe):
+
+PREFIX ex: <http://example.org/>
+
+SELECT ?pokemon ?name ?number
+WHERE {
+  GRAPH <http://example.org/pokemon> {
+    ?pokemon a ex:Pokemon ;
+             ex:name ?name ;
+             ex:number ?number .
+  }
+}
+ORDER BY ?number
+
+
+
